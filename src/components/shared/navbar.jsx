@@ -1,16 +1,17 @@
 import darkLogo from '../../assets/dark-logo.svg'
+import Button from './button'
 
 export default function navbar() {
 	return (
 		<>
-			<div className='flex items-center justify-between bg-base-100 py-6'>
+			<div className='flex items-center justify-between bg-base-100 px-6 py-4'>
 				<div className='flex flex-row'>
 					<img
 						src={darkLogo}
 						alt=''
 					/>
 
-					<ul className='flex gap-x-10 pl-12 font-semibold text-base'>
+					<ul className='flex gap-x-10 pl-12 font-extrabold text-base'>
 						<li className='cursor-pointer transition ease-in-out hover:text-[#d1d1d1]'>
 							<a>Membership</a>
 						</li>
@@ -28,11 +29,7 @@ export default function navbar() {
 						</li>
 					</ul>
 				</div>
-				<div className=''>
-					<h2 className='bg-black font-bold text-sm cursor-pointer text-white p-6 uppercase hover:bg-transparent hover:text-black border-2 hover:border-black transition ease-in-out'>
-						Book A Tour
-					</h2>
-				</div>
+				<Button className=''>Book A Tour</Button>
 			</div>
 		</>
 	)
