@@ -29,7 +29,7 @@ export default function navbar() {
 					</ul>
 				</div>
 				<div className=''>
-					<h2 className='bg-black font-bold text-sm cursor-pointer text-white p-6 uppercase'>
+					<h2 className='bg-black font-bold text-sm cursor-pointer text-white p-6 uppercase hover:bg-transparent hover:text-black border-2 hover:border-black transition ease-in-out'>
 						Book A Tour
 					</h2>
 				</div>
