@@ -10,20 +10,20 @@ export default function navbar() {
 						alt=''
 					/>
 
-					<ul className='menu menu-horizontal pl-7 font-semibold text-base'>
-						<li>
+					<ul className='flex gap-x-10 pl-12 font-semibold text-base'>
+						<li className='cursor-pointer transition ease-in-out hover:text-[#d1d1d1]'>
 							<a>Membership</a>
 						</li>
-						<li>
+						<li className='cursor-pointer transition ease-in-out hover:text-[#d1d1d1]'>
 							<a>Locations</a>
 						</li>
-						<li>
+						<li className='cursor-pointer transition ease-in-out hover:text-[#d1d1d1]'>
 							<a>Facilities</a>
 						</li>
-						<li>
+						<li className='cursor-pointer transition ease-in-out hover:text-[#d1d1d1]'>
 							<a>News</a>
 						</li>
-						<li>
+						<li className='cursor-pointer transition ease-in-out hover:text-[#d1d1d1]'>
 							<a>Contacts</a>
 						</li>
 					</ul>
