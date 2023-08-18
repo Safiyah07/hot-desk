@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { IoMenuOutline, IoCloseOutline } from 'react-icons/io5'
-import darkLogo from '../../assets/dark-logo.svg'
-import Button from './BlackButton'
+import darkLogo from '../assets/dark-logo.svg'
+import Button from './shared/BlackButton'
 
 export default function Navbar() {
 	const [showMenu, setShowMenu] = useState(true)

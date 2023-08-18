@@ -1,4 +1,4 @@
-import Navbar from '../components/shared/Navbar'
+import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Slider from '../components/Slider'
 import Body from '../components/Body'
@@ -10,8 +10,8 @@ export default function LandingPage() {
 		<>
 			<div className=''>
 				<Navbar />
-        <Hero />
-        <Slider />
+				<Hero />
+				<Slider />
 				<Body />
 				<Members />
 				<DemandOptions />
