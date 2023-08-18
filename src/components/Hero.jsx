@@ -33,12 +33,22 @@ export default function Hero() {
 							</div>
 
 							<div className='flex gap-2 py-2'>
-								<span className='bg-white border-4 sm:border-2  border-black px-4'>
+								<motion.div
+									initial={{ opacity: 0 }}
+									animate={{ opacity: 1 }}
+									transition={{ duration: 1, delay: 0.7 }}
+									className='bg-white border-4 sm:border-2  border-black px-4'
+								>
 									next
-								</span>
-								<span className='bg-white border-4 sm:border-2  border-black px-4'>
+								</motion.div>
+								<motion.div
+									initial={{ opacity: 0 }}
+									animate={{ opacity: 1 }}
+									transition={{ duration: 1, delay: 0.7 }}
+									className='bg-white border-4 sm:border-2  border-black px-4'
+								>
 									big move.
-								</span>
+								</motion.div>
 							</div>
 						</h2>
 
