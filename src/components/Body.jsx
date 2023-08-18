@@ -8,7 +8,7 @@ export default function Body() {
 		<>
 			<div className='flex md:flex-col sm:flex-col uppercase'>
 				<div className='md:w-full sm:w-full lg:w-1/2'>
-					<div className='text-black px-12 md:px-9 sm:px-5 lg:py-10 md:py-10 sm:py-10'>
+					<div className='text-black px-12 md:px-20 sm:px-5 lg:py-10 md:py-16 sm:py-10'>
 						<div>
 							<h2 className='text-[21px] md:text-[16px] sm:text-[16px] lg:pb-32 uppercase text-black font-extrabold'>
 								Hot Desk Your Way
@@ -55,7 +55,7 @@ export default function Body() {
 					/>
 				</div>
 				<div className='md:w-full sm:w-full lg:w-1/2 z-10'>
-					<div className='text-black bg-white px-12 md:px-9 sm:px-5 lg:py-10 md:py-10 sm:py-10'>
+					<div className='text-black bg-white px-12 md:px-20 sm:px-5 lg:py-10 md:py-16 sm:py-10'>
 						<div>
 							<h2 className='lg:text-[21px] md:text-[16px] lg:pb-32 sm:text-[16px]  uppercase text-black font-extrabold'>
 								NOT JUST DESKS

@@ -7,8 +7,8 @@ export default function Hero() {
 		<>
 			<div className=' flex uppercase'>
 				<div className='bg-gradient-to-br from-[#92f0ce] via-white to-[#c7f092] md:w-full sm:w-full lg:w-1/2'>
-					<div className='text-black flex flex-col justify-center items-center lg:py-10 md:py-16 sm:py-16 lg:hidden'>
-						<h2 className='md:text-[40px] sm:text-[21px] uppercase text-black font-extrabold'>
+					<div className='text-black flex flex-col justify-center items-center lg:py-10 md:py-24 sm:py-16 lg:hidden'>
+						<h2 className='md:text-[67px] sm:text-[21px] uppercase text-black font-extrabold'>
 							<div className='flex gap-2'>
 								<motion.div
 									className='bg-white border-4 border-black px-4'
@@ -42,7 +42,7 @@ export default function Hero() {
 							</div>
 						</h2>
 
-						<div className='md:text-2xl sm:text-xl normal-case font-bold tracking-wide pt-8 text-center'>
+						<div className='md:text-2xl sm:text-xl normal-case font-extrabold tracking-wide pt-8 text-center'>
 							<p className='text-center'>
 								Creative Co-Working Spaces in the <br /> heart of Melbourne.
 							</p>
@@ -51,10 +51,10 @@ export default function Hero() {
 								<Button>View Workspaces</Button>
 							</h2>
 							<br />
-							<p className='md:text-2xl sm:text-xl normal-case '>
+							<a className='md:text-xl sm:text-xl normal-case '>
 								or {''}
-								<span className='font-bolder underline'>Book a Tour</span>
-							</p>
+								<span className='font-black underline cursor-pointer'>Book a Tour</span>
+							</a>
 						</div>
 					</div>
 				</div>
