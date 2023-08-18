@@ -8,10 +8,10 @@ export default function Hero() {
 			<div className=' flex uppercase'>
 				<div className='bg-gradient-to-br from-[#92f0ce] via-white to-[#c7f092] md:w-full sm:w-full lg:w-1/2'>
 					<div className='text-black flex flex-col justify-center items-center lg:py-10 md:py-24 sm:py-16 lg:hidden'>
-						<h2 className='md:text-[67px] sm:text-[21px] uppercase text-black font-extrabold'>
+						<h2 className='md:text-[40px] sm:text-[14px] uppercase text-black font-extrabold'>
 							<div className='flex gap-2'>
 								<motion.div
-									className='bg-white border-4 border-black px-4'
+									className='bg-white border-4 sm:border-2 border-black px-4'
 									initial={{ opacity: 0 }}
 									animate={{ opacity: 1 }}
 									transition={{
@@ -26,17 +26,17 @@ export default function Hero() {
 									initial={{ opacity: 0 }}
 									animate={{ opacity: 1 }}
 									transition={{ duration: 1, delay: 0.7 }}
-									className='bg-white border-4 border-black px-4'
+									className='bg-white border-4 sm:border-2  border-black px-4'
 								>
 									your
 								</motion.div>
 							</div>
 
 							<div className='flex gap-2 py-2'>
-								<span className='bg-white border-4 border-black px-4'>
+								<span className='bg-white border-4 sm:border-2  border-black px-4'>
 									next
 								</span>
-								<span className='bg-white border-4 border-black px-4'>
+								<span className='bg-white border-4 sm:border-2  border-black px-4'>
 									big move.
 								</span>
 							</div>

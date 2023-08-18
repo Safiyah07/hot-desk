@@ -38,6 +38,7 @@ export default function Navbar() {
 					<img
 						src={darkLogo}
 						alt=''
+						className='sm:w-24'
 					/>
 
 					<ul className='lg:flex gap-x-10 pl-12 font-extrabold text-xl md:hidden sm:hidden'>

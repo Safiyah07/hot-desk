@@ -4,7 +4,7 @@ export default function DemandOptions() {
 	return (
 		<>
 			<div className='bg-black text-white lg:px-20 px-32 py-10 flex flex-col font-extrabold'>
-				<h2 className='lg:text-[54px] md:text-[2.3rem] sm:text-3xl font-black uppercase lg:w-2/3 m-auto text-center lg:bg-demandGraphic bg-no-repeat bg-[bottom_right_9rem]'>
+				<h2 className='lg:text-[50px] md:text-[2.3rem] sm:text-3xl font-black uppercase lg:w-[70%] m-auto text-center lg:bg-demandGraphic bg-no-repeat bg-[bottom_right_6rem]'>
 					ON-DEMAND OPTIONS FOR TEAMS OF ALL SIZES.
 				</h2>
 
