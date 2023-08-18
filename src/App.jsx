@@ -1,11 +1,20 @@
 import './index.css'
-import LandingPage from './pages/LandingPage'
+import Navbar from './components/shared/Navbar'
+import Hero from './components/Hero'
+import Slider from './components/Slider'
+import Body from './components/Body'
+import DemandOptions from './components/DemandOptions'
+
 
 function App() {
 
   return (
     <>
-      <LandingPage />
+      <Navbar />
+      <Hero />
+      <Slider />
+      <Body />
+      <DemandOptions />
     </>
   )
 }
