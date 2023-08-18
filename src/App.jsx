@@ -6,6 +6,7 @@ import Body from './components/Body'
 import Members from './components/Members'
 import DemandOptions from './components/DemandOptions'
 import Companies from './components/Companies'
+import ImageSlider from './components/ImageSlider'
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
       <Members />
 			<DemandOptions />
       <Companies />
+      <ImageSlider />
 		</>
 	)
 }
