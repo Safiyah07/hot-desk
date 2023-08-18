@@ -16,7 +16,7 @@ export default function Hero() {
 									animate={{ opacity: 1 }}
 									transition={{
 										duration: 0.8,
-										delay: 0.5,
+										delay: 0.3,
 										ease: [0, 0.71, 0.2, 1.01],
 									}}
 								>
@@ -25,7 +25,7 @@ export default function Hero() {
 								<motion.div
 									initial={{ opacity: 0 }}
 									animate={{ opacity: 1 }}
-									transition={{ duration: 1, delay: 0.7 }}
+									transition={{ duration: 1, delay: 0.5 }}
 									className='bg-white border-4 sm:border-2  border-black px-4'
 								>
 									your
@@ -44,7 +44,7 @@ export default function Hero() {
 								<motion.div
 									initial={{ opacity: 0 }}
 									animate={{ opacity: 1 }}
-									transition={{ duration: 1, delay: 0.7 }}
+									transition={{ duration: 1, delay: 0.9 }}
 									className='bg-white border-4 sm:border-2  border-black px-4'
 								>
 									big move.
