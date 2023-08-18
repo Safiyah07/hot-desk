@@ -5,7 +5,7 @@ export default {
 		extend: {
 			backgroundImage: {
         'demandGraphic': "url('src/assets/DemandGraphic.svg')",
-        'footer-texture': "url('/')",
+				'GraphicUnderline': "url('src/assets/GraphicUnderline.svg')",
       }
 		},
 		screens: {
