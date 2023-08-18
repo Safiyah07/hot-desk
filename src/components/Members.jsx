@@ -21,10 +21,11 @@ export default function Members() {
 				</h2>
 				<div className='flex flex-col items-center justify-center py-16 md:px-10'>
 					<div className='flex md:items-center sm:flex-col sm:gap-1 gap-10 py-2'>
-						<span className=' w-42 h-20 md:h-16 bg-white border-[3px] md:border-2 border-black rounded-full px-10 flex items-center gap-2 font-extrabold text-3xl md:text-xl sm:text-lg'>
+						<span className=' w-42 h-20 md:h-16 sm:h-14 m-auto bg-white border-[3px] md:border-2 border-black rounded-full px-10 flex items-center gap-2 font-extrabold text-3xl md:text-xl sm:text-lg'>
 							<img
 								src={Access}
 								alt=''
+								className='sm:h-9'
 							/>
 							24/7 Access
 						</span>
@@ -35,10 +36,11 @@ export default function Members() {
 								className='w-44 h-20 border-[3px] md:border-2 border-black rounded-full md:hidden sm:hidden'
 							/>
 						</span>
-						<span className=' w-42 h-20 md:h-16 bg-white border-[3px] md:border-2 border-black rounded-full px-10 flex items-center gap-2 font-extrabold text-3xl md:text-2xl sm:text-lg'>
+						<span className=' w-42 h-20 md:h-16 sm:h-14 m-auto bg-white border-[3px] md:border-2 border-black rounded-full px-10 flex items-center gap-2 font-extrabold text-3xl md:text-2xl sm:text-lg'>
 							<img
 								src={Concierge}
 								alt=''
+								className='sm:h-9'
 							/>
 							Concierge
 						</span>
@@ -51,7 +53,7 @@ export default function Members() {
 						</span>
 					</div>
 
-					<div className='flex md:items-center sm:flex-col sm:gap-1 gap-10 py-2'>
+					<div className='flex md:items-center sm:flex-col sm:gap-1 gap-10 lg:py-2'>
 						<span className=''>
 							<img
 								src={Members3}
@@ -59,10 +61,11 @@ export default function Members() {
 								className='w-44 h-20 border-[3px] md:border-2 border-black rounded-full md:hidden sm:hidden'
 							/>
 						</span>
-						<span className=' w-42 h-20 md:h-16 bg-white border-[3px] md:border-2 border-black rounded-full px-10 flex items-center gap-2 font-extrabold text-3xl md:text-2xl sm:text-lg'>
+						<span className=' lg:w-42 h-20 w-auto m-auto md:h-16 sm:h-14 bg-white border-[3px] md:border-2 border-black rounded-full px-10 sm:px-5 flex items-center gap-2 font-extrabold text-3xl md:text-2xl sm:text-lg'>
 							<img
 								src={Snack}
 								alt=''
+								className='sm:h-9'
 							/>
 							Snack Bar
 						</span>
@@ -74,20 +77,22 @@ export default function Members() {
 								className='w-20 h-20 border-[3px] border-black rounded-[50%] sm:hidden'
 							/>
 						</span>
-						<span className=' w-42 h-20 md:h-16 bg-white border-[3px] md:border-2 border-black rounded-full px-10 flex items-center gap-2 font-extrabold text-3xl md:text-2xl sm:text-lg'>
+						<span className=' w-42 h-20 md:h-16 sm:h-14 sm:m-auto bg-white border-[3px] md:border-2 border-black rounded-full px-10 flex items-center gap-2 font-extrabold text-3xl md:text-2xl sm:text-lg'>
 							<img
 								src={Internet}
 								alt=''
+								className='sm:h-9'
 							/>
 							Gigabit Internet
 						</span>
 					</div>
 
 					<div className='flex md:items-center sm:flex-col sm:gap-1 gap-10 py-2'>
-						<span className=' w-42 h-20 md:h-16 bg-white border-[3px] md:border-2 border-black rounded-full px-10 flex items-center gap-2 font-extrabold text-3xl md:text-2xl sm:text-lg'>
+						<span className=' w-42 h-20 md:h-16 sm:h-16 sm:m-auto bg-white border-[3px] md:border-2 border-black rounded-full px-10 flex items-center gap-2 font-extrabold text-3xl md:text-2xl sm:text-lg'>
 							<img
 								src={Studios}
 								alt=''
+								className='sm:h-9'
 							/>
 							Studios
 						</span>
@@ -99,10 +104,11 @@ export default function Members() {
 							/>
 						</span>
 
-						<span className=' w-42 h-20 md:h-16 bg-white border-[3px] md:border-2 border-black rounded-full px-10 flex items-center gap-2 font-extrabold text-3xl md:text-2xl sm:text-lg'>
+						<span className=' w-42 h-20 md:h-16 sm:h-16 sm:m-auto bg-white border-[3px] md:border-2 border-black rounded-full px-10 flex items-center gap-2 font-extrabold text-3xl md:text-2xl sm:text-lg'>
 							<img
 								src={Mail}
 								alt=''
+								className='sm:h-9'
 							/>
 							Mail Handling
 						</span>
