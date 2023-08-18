@@ -1,4 +1,4 @@
-import Button from './shared/Button'
+import Button from './shared/BlackButton'
 import BodyImage1 from '../assets/bodyImage1.jpg'
 import BodyImage2 from '../assets/bodyImage2.jpg'
 import BodyImage3 from '../assets/bodyImage3.jpg'

@@ -2,7 +2,12 @@
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
-		extend: {},
+		extend: {
+			backgroundImage: {
+        'demandGraphic': "url('src/assets/DemandGraphic.svg')",
+        'footer-texture': "url('/')",
+      }
+		},
 		screens: {
       // 'sm': '576px',
       // => @media (min-width: 576px) { ... }

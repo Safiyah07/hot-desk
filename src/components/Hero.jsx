@@ -1,5 +1,5 @@
 import HeroImage from '../assets/hero-img.jpg'
-import Button from './shared/Button'
+import Button from './shared/BlackButton'
 import { motion } from 'framer-motion'
 
 export default function Hero() {
@@ -53,7 +53,9 @@ export default function Hero() {
 							<br />
 							<a className='md:text-xl sm:text-xl normal-case '>
 								or {''}
-								<span className='font-black underline cursor-pointer'>Book a Tour</span>
+								<span className='font-black underline cursor-pointer'>
+									Book a Tour
+								</span>
 							</a>
 						</div>
 					</div>

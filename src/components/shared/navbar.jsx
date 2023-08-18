@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { IoMenuOutline, IoCloseOutline } from 'react-icons/io5'
 import darkLogo from '../../assets/dark-logo.svg'
-import Button from './Button'
+import Button from './BlackButton'
 
 export default function Navbar() {
 	const [showMenu, setShowMenu] = useState(true)
@@ -56,9 +56,9 @@ export default function Navbar() {
 				</div>
 
 				<div className='dropdown md:flex md:gap-4 md:items-center sm:block lg:hidden'>
-						<div className='sm:hidden'>
-							<Button>Book A Tour</Button>
-						</div>
+					<div className='sm:hidden'>
+						<Button>Book A Tour</Button>
+					</div>
 					<div className='lg:hidden'>
 						<label
 							tabIndex={0}
