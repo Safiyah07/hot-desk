@@ -3,14 +3,14 @@ import WhiteButton from './shared/WhiteButton'
 export default function DemandOptions() {
 	return (
 		<>
-			<div className='bg-black text-white lg:px-20 px-32 sm:px-16 py-10 flex flex-col font-extrabold'>
-				<h2 className='lg:text-[50px] md:text-[2rem] sm:text-xl font-black uppercase lg:w-[70%] m-auto text-center lg:bg-demandGraphic bg-no-repeat bg-[bottom_right_6rem]'>
+			<div className='bg-black text-white py-10 flex flex-col font-extrabold'>
+				<h2 className='lg:text-[50px] md:text-[2rem] sm:text-xl font-black uppercase lg:w-[70%] m-auto text-center lg:bg-demandGraphic bg-no-repeat bg-[bottom_right_6rem] lg:px-20 px-32 sm:px-16 '>
 					ON-DEMAND OPTIONS FOR TEAMS OF ALL SIZES.
 				</h2>
 
-				<div className='flex md:flex-col sm:flex-col gap-20 py-20'>
+				<div className='flex md:flex-col sm:flex-col gap-20 py-20 sm:py-12 lg:px-20 px-32 sm:px-5 '>
 					<div className='border-2 border-white py-6 lg:w-1/2'>
-						<p className='lg:text-[54px] md:text-[2.5rem] sm:text-3xl font-black uppercase border-b-2 w-full px-10'>
+						<p className='lg:text-[54px] md:text-[2.5rem] sm:text-3xl font-black uppercase border-b-2 w-full px-10 pb-5'>
 							Solo
 						</p>
 						<p className='border-b-2 py-6 text-2xl md:text-2xl sm:text-lg px-10'>
@@ -35,7 +35,7 @@ export default function DemandOptions() {
 					</div>
 
 					<div className='border-2 border-white py-6 lg:w-1/2'>
-						<p className='lg:text-[54px] md:text-[2.5rem] sm:text-3xl font-black uppercase border-b-2 w-full px-10'>
+						<p className='lg:text-[54px] md:text-[2.5rem] sm:text-3xl font-black uppercase border-b-2 w-full px-10 pb-5'>
 							Team
 						</p>
 						<p className='border-b-2 py-6 text-2xl md:text-2xl sm:text-lg px-10'>
