@@ -17,11 +17,11 @@ export default function DemandOptions() {
 							Workspace options to suit every demand with access to all centres
 							and amenities.
 						</p>
-						<div className='flex border-b-2 py-6 px-5 text-xl font-extrabold md:text-xl sm:text-lg'>
-							<p className='bg-white flex items-center w-auto h-12 rounded-3xl text-black mx-5 px-5'>
+						<div className='flex border-b-2 py-6 px-5 text-xl font-extrabold md:text-xl sm:text-[16px]'>
+							<p className='bg-white flex items-center w-auto h-12 rounded-3xl text-black mx-5 px-5 sm:px-4'>
 								From $250/m
 							</p>
-							<p className='flex items-center bg-white w-40 h-12 rounded-3xl text-black p-5'>
+							<p className='flex items-center bg-white w-40 sm:w-24 h-12 rounded-3xl text-black p-5 sm:p-4'>
 								1+ User
 							</p>
 						</div>
@@ -41,11 +41,11 @@ export default function DemandOptions() {
 						<p className='border-b-2 py-6 text-2xl md:text-2xl sm:text-lg px-10'>
             A coworking plan for your team to work when and where you want.
 						</p>
-						<div className='flex border-b-2 py-6 px-5 text-xl font-extrabold md:text-xl sm:text-lg'>
-							<p className='bg-white flex items-center w-auto h-12 rounded-3xl text-black mx-5 px-5'>
+						<div className='flex border-b-2 py-6 px-5 text-xl font-extrabold md:text-xl sm:text-[16px]'>
+							<p className='bg-white flex items-center w-auto h-12 rounded-3xl text-black mx-5 px-5 sm:px-4'>
 								From $750/m
 							</p>
-							<p className='flex items-center bg-white w-40 h-12 rounded-3xl text-black p-5'>
+							<p className='flex items-center bg-white w-40 sm:w-24 h-12 rounded-3xl text-black p-5 sm:p-4'>
 								3+ User
 							</p>
 						</div>
