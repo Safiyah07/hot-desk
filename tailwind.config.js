@@ -4,17 +4,15 @@ export default {
 	theme: {
 		extend: {},
 		screens: {
-      'sm': '576px',
+      // 'sm': '576px',
       // => @media (min-width: 576px) { ... }
       
-			tablet: '640px',
+			sm: { max: '519px' },
 			// => @media (min-width: 640px) { ... }
 
-			laptop: '1024px',
+			md: {min:'520px', max: '992px'},
+			lg: {min:'993px'},
 			// => @media (min-width: 1024px) { ... }
-
-			desktop: '1280px',
-			// => @media (min-width: 1280px) { ... }
 		},
 	},
 	// eslint-disable-next-line no-undef
