@@ -8,7 +8,7 @@ export default function Hero() {
 			<div className=' flex uppercase'>
 				<div className='bg-gradient-to-br from-[#92f0ce] via-white to-[#c7f092] md:w-full sm:w-full lg:w-1/2'>
 					<div className='text-black flex flex-col justify-center items-center lg:py-10 md:py-24 sm:py-16 lg:hidden'>
-						<h2 className='md:text-[40px] sm:text-[14px] uppercase text-black font-extrabold'>
+						<h2 className='md:text-[40px] sm:text-[30px] uppercase text-black font-extrabold'>
 							<div className='flex gap-2'>
 								<motion.div
 									className='bg-white border-4 sm:border-2 border-black px-4'
