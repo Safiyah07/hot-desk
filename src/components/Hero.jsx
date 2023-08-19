@@ -13,6 +13,7 @@ export default function Hero() {
 								<motion.div
 									className='px-4 bg-white border-4 border-black sm:border-2'
 									initial={{ opacity: 0 }}
+									viewport={{ once: false }}
 									animate={{ opacity: 1 }}
 									transition={{
 										duration: 0.8,
@@ -24,6 +25,7 @@ export default function Hero() {
 								</motion.div>
 								<motion.div
 									initial={{ opacity: 0 }}
+									viewport={{ once: false }}
 									animate={{ opacity: 1 }}
 									transition={{ duration: 1, delay: 0.5 }}
 									className='px-4 bg-white border-4 border-black sm:border-2'
@@ -35,6 +37,7 @@ export default function Hero() {
 							<div className='flex gap-2 py-2'>
 								<motion.div
 									initial={{ opacity: 0 }}
+									viewport={{ once: false }}
 									animate={{ opacity: 1 }}
 									transition={{ duration: 1, delay: 0.7 }}
 									className='px-4 bg-white border-4 border-black sm:border-2'
@@ -43,6 +46,7 @@ export default function Hero() {
 								</motion.div>
 								<motion.div
 									initial={{ opacity: 0 }}
+									viewport={{ once: false }}
 									animate={{ opacity: 1 }}
 									transition={{ duration: 1, delay: 0.9 }}
 									className='px-4 bg-white border-4 border-black sm:border-2'
