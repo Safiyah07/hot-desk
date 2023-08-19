@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  -webkit-font-smoothing: antialised
+  overflow-x: hidden;
 }
 
 h1,
