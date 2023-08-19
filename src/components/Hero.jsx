@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 export default function Hero() {
 	return (
 		<>
-			<div className='flex uppercase '>
+			<div className='flex uppercase'>
 				<div className='bg-gradient-to-br from-[#92f0ce] via-white to-[#c7f092] md:w-full sm:w-full lg:w-1/2'>
 					<div className='flex flex-col items-center justify-center text-black lg:py-10 md:py-24 sm:py-16 lg:hidden'>
 						<h2 className='md:text-[40px] sm:text-[30px] uppercase text-black font-extrabold'>

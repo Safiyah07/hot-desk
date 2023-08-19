@@ -9,6 +9,8 @@ import Companies from './components/Companies'
 import ImageSlider from './components/ImageSlider'
 import GetInTouch from './components/GetInTouch'
 import Requirements from './components/Requirements'
+import Footer from './components/footer'
+import Foot from './components/Footer'
 
 function App() {
 	return (
@@ -23,6 +25,8 @@ function App() {
       <ImageSlider />
       <GetInTouch />
 			<Requirements />
+			<Footer />
+			<Foot />
 		</>
 	)
 }
