@@ -26,7 +26,7 @@ export default function Requirements() {
 							</h2>
 						</div>
 
-						<div className='px-6 pt-8 font-bold normal-case md:text-4xl sm:text-xl'>
+						<div className='pt-8 pr-6 font-bold normal-case md:text-4xl sm:text-xl'>
 							<h2 className='lg:text-[54px] lg:text-5xl '>
 								LET’S DISCUSS YOUR TEAM’S REQUIREMENTS.
 							</h2>
