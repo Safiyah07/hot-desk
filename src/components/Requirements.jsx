@@ -5,7 +5,7 @@ import WhiteButton from './shared/WhiteButton'
 export default function Requirements() {
 	return (
 		<>
-			<div className='flex md:flex-col sm:flex-col absolute gap-10 text-white pt-24 lg:pl-24  bg-gradient-to-b from-[#000] to-[#222] h-fit'>
+			<div className='flex md:flex-col sm:flex-col relative gap-10 text-white pt-24 lg:pl-24  bg-gradient-to-b from-[#000] to-[#222] h-fit'>
         <div className='md:pl-32 sm:pl-6 sm:pb-20'>
 					<img
 						src={Requirements1}
