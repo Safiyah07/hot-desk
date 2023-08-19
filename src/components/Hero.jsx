@@ -17,9 +17,9 @@ export default function Hero() {
 								<div className='flex gap-2'>
 									<motion.div
 										className='px-4 bg-white border-4 border-black sm:border-2'
-										initial='hidden'
-										viewport={{ fadeInVariants }}
-										animate='visible'
+										initial={{ opacity: 0 }}
+										viewport={{ once: false }}
+										animate={{ opacity: 1 }}
 										transition={{
 											duration: 0.8,
 											delay: 0.3,
