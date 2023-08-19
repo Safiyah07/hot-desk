@@ -1,9 +1,7 @@
 import { Pagination, Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import 'swiper/css'
+import 'swiper/css/pagination'
 import Luminous from '../assets/LuminousDark.svg'
 import LogoIpsum from '../assets/LogoIpsumDark.svg'
 import Rise from '../assets/RiseDark.svg'
@@ -15,13 +13,13 @@ export const ImageSlider = () => {
 	return (
 		<>
 			<Swiper
-			modules={[Autoplay, Pagination]}
-        spaceBetween={10} // Adjust spacing between slides
-        slidesPerView={1} // Number of slides per view
-        loop={true} // Loop the slider
-        autoplay={{ delay: 3000 }} // Autoplay with a delay of 3000ms
-        pagination={{ clickable: true }} // Show clickable pagination
-      >
+				modules={[Autoplay, Pagination]}
+				spaceBetween={10} 
+				slidesPerView={1}
+				loop={true}
+				autoplay={{ delay: 3000 }} 
+				pagination={{ clickable: true }}
+			>
 				<SwiperSlide>
 					<div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 text-black border-black sm:border-none mt-32 sm:my-10 lg:mx-20 lg:divide-x-4 lg:divide-black'>
 						<div className='flex flex-col px-12 py-10 sm:px-0'>
@@ -52,7 +50,7 @@ export const ImageSlider = () => {
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
-        <div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 text-black border-black sm:border-none my-32 sm:my-10 lg:mx-20 lg:divide-x-4 lg:divide-black'>
+					<div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 text-black border-black sm:border-none my-32 sm:my-10 lg:mx-20 lg:divide-x-4 lg:divide-black'>
 						<div className='flex flex-col px-12 py-10 sm:px-0'>
 							<img
 								src={LogoIpsum}
@@ -81,7 +79,7 @@ export const ImageSlider = () => {
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
-        <div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 text-black border-black sm:border-none my-32 sm:my-10 lg:mx-20 lg:divide-x-4 lg:divide-black'>
+					<div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 text-black border-black sm:border-none my-32 sm:my-10 lg:mx-20 lg:divide-x-4 lg:divide-black'>
 						<div className='flex flex-col px-12 py-10 sm:px-0'>
 							<img
 								src={Rise}

@@ -12,7 +12,7 @@ export default function Slider() {
 		const contentWidth = marqueeContent.offsetWidth;
 		const containerWidth = marqueeContainer.offsetWidth;
 	
-		const animationDuration = contentWidth / 50; // Adjust as needed
+		const animationDuration = contentWidth / 30; // Adjust as needed
 	
 		gsap.set(marqueeContent, { x: containerWidth }); // Initial position
 	
