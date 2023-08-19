@@ -7,6 +7,7 @@ import Members from './components/Members'
 import DemandOptions from './components/DemandOptions'
 import Companies from './components/Companies'
 import ImageSlider from './components/ImageSlider'
+import GetInTouch from './components/GetInTouch'
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 			<DemandOptions />
       <Companies />
       <ImageSlider />
+      <GetInTouch />
 		</>
 	)
 }
