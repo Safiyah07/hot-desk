@@ -8,6 +8,7 @@ import DemandOptions from './components/DemandOptions'
 import Companies from './components/Companies'
 import ImageSlider from './components/ImageSlider'
 import GetInTouch from './components/GetInTouch'
+import Requirements from './components/Requirements'
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
       <Companies />
       <ImageSlider />
       <GetInTouch />
+			<Requirements />
 		</>
 	)
 }

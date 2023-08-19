@@ -39,7 +39,7 @@ export default function GetInTouch() {
 					</div>
 
 					<div className='flex justify-center gap-20'>
-						<div className='flex flex-col sm:w-[90vw] lg:w-[65.7vw]'>
+						<div className='flex flex-col md:w-[90vw] sm:w-[87vw] lg:w-[65.7vw]'>
 							<label className='mb-4 text-sm font-black text-left uppercase'>
 								Company name (Optional)
 							</label>
