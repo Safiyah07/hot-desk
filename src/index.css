@@ -18,3 +18,23 @@ h4, button, label {
 body {
   font-family: 'open sans', sans-serif;
 }
+
+/* swiper-custom.css */
+
+/* Change the background color of active bullet */
+.swiper-pagination-bullet-active {
+  background-color: #ff0000; /* Your desired color */
+}
+
+/* Change the background color of inactive bullets */
+.swiper-pagination-bullet {
+  background-color: #999; /* Your desired color */
+}
+
+/* Optionally, change other styles like size, margin, etc. */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+}
+

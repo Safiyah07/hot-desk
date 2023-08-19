@@ -6,7 +6,7 @@ import Body from './components/Body'
 import Members from './components/Members'
 import DemandOptions from './components/DemandOptions'
 import Companies from './components/Companies'
-import ImageSlider from './components/ImageSlider'
+import { ImageSlider } from './components/ImageSlider'
 import GetInTouch from './components/GetInTouch'
 import Requirements from './components/Requirements'
 import Tail from './components/Tail'
@@ -18,11 +18,11 @@ function App() {
 			<Hero />
 			<Slider />
 			<Body />
-      <Members />
+			<Members />
 			<DemandOptions />
-      <Companies />
-      <ImageSlider />
-      <GetInTouch />
+			<Companies />
+			<ImageSlider />
+			<GetInTouch />
 			<Requirements />
 			<Tail />
 		</>
