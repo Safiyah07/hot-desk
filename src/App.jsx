@@ -6,7 +6,8 @@ import {
 	Outlet,
 	RouterProvider,
 } from 'react-router-dom'
-import {IoArrowUpOutline} from 'react-icons/io5'
+// ARROW TO NAVIGATE TO THE TOP
+// import {IoArrowUpOutline} from 'react-icons/io5'
 import Navbar from './components/shared/Navbar'
 import Tail from './components/shared/Tail'
 import LandingPage from './pages/LandingPage'
