@@ -6,6 +6,12 @@
 
 body {
   overflow-x: hidden;
+  font-family: 'open sans', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+	will-change: scroll-position;
 }
 
 h1,
@@ -13,10 +19,6 @@ h2,
 h3,
 h4, button, label {
 	font-family: 'Unbounded', sans-serif;
-}
-
-body {
-  font-family: 'open sans', sans-serif;
 }
 
 /* swiper-custom.css */

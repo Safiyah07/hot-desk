@@ -1,4 +1,4 @@
-import BlackButton from './shared/BlackButton'
+import BlackButton from './BlackButton'
 
 export default function GetInTouch() {
 	return (
@@ -63,9 +63,7 @@ export default function GetInTouch() {
 							></textarea>
 
 							<div className='my-10'>
-								<BlackButton>
-									submit form
-								</BlackButton>
+								<BlackButton>submit form</BlackButton>
 							</div>
 
 							<p className='text-lg font-extrabold'>See you soon! ✌</p>

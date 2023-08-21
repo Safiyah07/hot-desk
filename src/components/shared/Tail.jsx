@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import whiteLogo from '../assets/white-logo.svg'
+import whiteLogo from '../../assets/white-logo.svg'
 
 export default function Tail() {
 	const footerYear = new Date().getFullYear()

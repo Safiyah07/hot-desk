@@ -2,12 +2,12 @@ import { Pagination, Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import Luminous from '../assets/LuminousDark.svg'
-import LogoIpsum from '../assets/LogoIpsumDark.svg'
-import Rise from '../assets/RiseDark.svg'
-import LogoIpsumStaff from '../assets/LogoIpsumStaff.jpg'
-import LuminousStaff from '../assets/LuminousStaff.jpg'
-import RiseStaff from '../assets/RiseStaff.jpg'
+import Luminous from '../../assets/LuminousDark.svg'
+import LogoIpsum from '../../assets/LogoIpsumDark.svg'
+import Rise from '../../assets/RiseDark.svg'
+import LogoIpsumStaff from '../../assets/LogoIpsumStaff.jpg'
+import LuminousStaff from '../../assets/LuminousStaff.jpg'
+import RiseStaff from '../../assets/RiseStaff.jpg'
 
 export const ImageSlider = () => {
 	return (

@@ -1,12 +1,13 @@
-import Requirements1 from '../assets/Requirements1.jpg'
-import Requirements2 from '../assets/Requirements2.jpg'
-import WhiteButton from './shared/WhiteButton'
+import { Link } from 'react-router-dom'
+import Requirements1 from '../../assets/Requirements1.jpg'
+import Requirements2 from '../../assets/Requirements2.jpg'
+import WhiteButton from '../shared/WhiteButton'
 
 export default function Requirements() {
 	return (
 		<>
 			<div className='flex md:flex-col sm:flex-col relative gap-10 text-white pt-24 lg:pl-24  bg-gradient-to-b from-[#000] to-[#222] h-fit'>
-        <div className='md:pl-32 sm:pl-6 sm:pb-20'>
+				<div className='md:pl-32 sm:pl-6 sm:pb-20'>
 					<img
 						src={Requirements1}
 						alt=''
@@ -30,9 +31,11 @@ export default function Requirements() {
 							<h2 className='lg:text-[54px] lg:text-5xl '>
 								LET’S DISCUSS YOUR TEAM’S REQUIREMENTS.
 							</h2>
-							<h2 className='flex py-10 md:justify-center sm:justify-center'>
-								<WhiteButton>Get in touch</WhiteButton>
-							</h2>
+							<Link to='/contact'>
+								<h2 className='flex py-10 md:justify-center sm:justify-center'>
+									<WhiteButton>Get in touch</WhiteButton>
+								</h2>
+							</Link>
 						</div>
 					</div>
 				</div>
