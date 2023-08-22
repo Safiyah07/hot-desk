@@ -5,6 +5,7 @@ export default {
 		extend: {
 			backgroundImage: {
         'demandGraphic': "url('src/assets/landing/DemandGraphic.svg')",
+				'soloMembershipGraphic': "url('src/assets/membership/soloMembershipGraphic.svg')",
 				'GraphicUnderline': "url('src/assets/landing/GraphicUnderline.svg')",
       }
 		},
