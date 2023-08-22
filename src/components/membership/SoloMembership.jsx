@@ -4,7 +4,7 @@ import WhiteButton from '../shared/WhiteButton'
 export default function SoloMembership() {
 	return (
 		<>
-			<div className='flex flex-col py-32 sm:py-10 font-extrabold text-white bg-gradient-to-b from-[#000] to-[#222]'>
+			<div id='solo' className='flex flex-col py-32 sm:py-10 font-extrabold text-white bg-gradient-to-b from-[#000] to-[#222]'>
 				<h2 className='lg:text-[50px] md:text-[2rem] sm:text-xl font-black uppercase lg:w-[70%] m-auto text-center bg-soloMembershipGraphic bg-contain bg-no-repeat bg-[bottom_left_7rem] sm:bg-[bottom_left_6rem] lg:pb-3 px-32 sm:px-16 '>
 					Solo Membership
 				</h2>
