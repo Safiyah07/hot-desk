@@ -1,10 +1,10 @@
-import GetInTouch from '../components/shared/GetInTouch'
+import CompaniesFooter from '../components/shared/CompaniesFooter'
 
 export default function BookTour() {
 	return (
 		<>
 			Book Tour
-			<GetInTouch />
+			<CompaniesFooter />
 		</>
 	)
 }

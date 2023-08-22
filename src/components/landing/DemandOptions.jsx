@@ -27,12 +27,14 @@ export default function DemandOptions() {
 							</p>
 						</div>
 
-						<Link
-							to='/memberships'
-							className='pt-6 m-auto w-[90%] text-center'
-						>
-							<WhiteButton> See Solo Plans</WhiteButton>
-						</Link>
+						<div className='pt-6 m-auto w-[90%] text-center'>
+							<Link
+								to='/memberships'
+								className='pt-6 m-auto w-[90%] text-center'
+							>
+								<WhiteButton> See Solo Plans</WhiteButton>
+							</Link>
+						</div>
 					</div>
 
 					<div className='py-6 border-2 border-white lg:w-1/2'>
@@ -51,12 +53,14 @@ export default function DemandOptions() {
 							</p>
 						</div>
 
-						<Link
-							to='/memberships'
-							className='pt-6 m-auto w-[90%] text-center'
-						>
-							<WhiteButton> See Team Plans</WhiteButton>
-						</Link>
+						<div className='pt-6 m-auto w-[90%] text-center'>
+							<Link
+								to='/memberships'
+								className='pt-6 m-auto w-[90%] text-center'
+							>
+								<WhiteButton> See Team Plans</WhiteButton>
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>

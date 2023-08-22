@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import Button from '../shared/BlackButton'
-import BodyImage1 from '../../assets/bodyImage1.jpg'
-import BodyImage2 from '../../assets/bodyImage2.jpg'
-import BodyImage3 from '../../assets/bodyImage3.jpg'
+import BodyImage1 from '../../assets/landing/bodyImage1.jpg'
+import BodyImage2 from '../../assets/landing/bodyImage2.jpg'
+import BodyImage3 from '../../assets/landing/bodyImage3.jpg'
 
 export default function Body() {
 	return (

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import Requirements1 from '../../assets/Requirements1.jpg'
-import Requirements2 from '../../assets/Requirements2.jpg'
+import Requirements1 from '../../assets/landing/Requirements1.jpg'
+import Requirements2 from '../../assets/landing/Requirements2.jpg'
 import WhiteButton from '../shared/WhiteButton'
 
 export default function Requirements() {

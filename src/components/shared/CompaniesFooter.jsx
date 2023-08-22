@@ -4,9 +4,9 @@ import LogoIpsum from '../../assets/LogoIpsum.svg'
 import Shell from '../../assets/Shell.svg'
 import Rise from '../../assets/Rise.svg'
 
-export default function Companies() {
+export default function CompaniesFooter() {
 	return (
-		<div className='flex flex-col text-white text-center py-24 bg-gradient-to-b from-[#222] to-[#000]'>
+		<div className='flex flex-col text-white text-center py-24 bg-gradient-to-b from-[#000] to-[#222]'>
 			<h2 className='lg:text-[45px] md:text-[1.8rem] sm:text-xl font-black uppercase lg:pb-20 pb-14 bg-GraphicUnderline bg-no-repeat lg:bg-[center_bottom_4rem] bg-[center_bottom_2rem]'>
 				JOIN OVER 200 COMPANIES
 			</h2>

@@ -1,10 +1,11 @@
-import GetInTouch from '../components/shared/GetInTouch'
+import Companies from '../components/landing/Companies'
+import Hero from '../components/membership/Hero'
 
 export default function Membership() {
 	return (
-		<div>
-			Membership
-			<GetInTouch />
-		</div>
+		<>
+			<Hero />
+			<Companies />
+		</>
 	)
 }

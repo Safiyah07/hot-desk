@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import HeroImage from '../../assets/hero-img.jpg'
+import HeroImage from '../../assets/landing/hero-img.jpg'
 import Button from '../shared/BlackButton'
 
 export default function Hero() {
