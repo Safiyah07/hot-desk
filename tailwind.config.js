@@ -4,8 +4,8 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-        'demandGraphic': "url('src/assets/DemandGraphic.svg')",
-				'GraphicUnderline': "url('src/assets/GraphicUnderline.svg')",
+        'demandGraphic': "url('src/assets/landing/DemandGraphic.svg')",
+				'GraphicUnderline': "url('src/assets/landing/GraphicUnderline.svg')",
       }
 		},
 		screens: {

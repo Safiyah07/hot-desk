@@ -34,18 +34,18 @@ export default function Hero() {
 									animate={{ opacity: 1 }}
 									mode='wait'
 									transition={{ duration: 1, delay: 0.5 }}
-									className='px-4'
+									className='px-4 md:hidden sm:hidden'
 								>
 									<img
 										src={Hero1}
 										alt=''
-										className='border-4 border-black sm:border-2 w-[130px] rounded-[50%]'
+										className='border-4 border-black sm:border-2 w-32 rounded-[50%]'
 									/>
 								</motion.div>
 							</div>
-							<div className='flex items-center justify-center gap-3 pb-3'>
+							<div className='flex gap-3 pb-3 lg:items-center lg:justify-center'>
 								<motion.div
-									className='px-4'
+									className='px-4 md:hidden sm:hidden'
 									initial={{ opacity: 0 }}
 									viewport={{ once: false }}
 									animate={{ opacity: 1 }}
@@ -59,7 +59,7 @@ export default function Hero() {
 									<img
 										src={Hero2}
 										alt=''
-										className='border-4 border-black sm:border-2 w-[200px] h-[130px] rounded-full'
+										className='h-32 border-4 border-black rounded-full sm:border-2 w-52'
 									/>
 								</motion.div>
 								<motion.div
@@ -115,12 +115,12 @@ export default function Hero() {
 									animate={{ opacity: 1 }}
 									mode='wait'
 									transition={{ duration: 1, delay: 0.9 }}
-									className='px-4'
+									className='px-4 md:hidden sm:hidden'
 								>
 									<img
 										src={Hero3}
 										alt=''
-										className='border-4 border-black sm:border-2 w-[130px] h-[130px] rounded-[50%]'
+										className='border-4 border-black sm:border-2 w-32 h-32 rounded-[50%]'
 									/>
 								</motion.div>
 							</div>
@@ -131,12 +131,12 @@ export default function Hero() {
 									animate={{ opacity: 1 }}
 									mode='wait'
 									transition={{ duration: 1, delay: 0.9 }}
-									className='px-4'
+									className='px-4 md:hidden sm:hidden'
 								>
 									<img
 										src={Hero4}
 										alt=''
-										className='border-4 border-black sm:border-2 w-[200px] h-[130px] rounded-full'
+										className='h-32 border-4 border-black rounded-full sm:border-2 w-52'
 									/>
 								</motion.div>
 								<motion.div
@@ -152,8 +152,8 @@ export default function Hero() {
 							</div>
 						</h2>
 
-						<div className='flex flex-col items-center gap-6 py-6'>
-							<div className='flex gap-6'>
+						<div className='flex flex-col items-center gap-6 py-6 sm:gap-4'>
+							<div className='flex gap-6 sm:gap-3'>
 								<a
 									href='#solo'
 									className=''
@@ -169,7 +169,7 @@ export default function Hero() {
 								</a>
 							</div>
 
-							<p className='text-2xl normal-case '>
+							<p className='text-2xl normal-case md:text-xl sm:text-lg'>
 								or {''}
 								<Link
 									to='/book-tour'
