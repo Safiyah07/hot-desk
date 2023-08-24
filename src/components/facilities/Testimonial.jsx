@@ -13,7 +13,7 @@ import RiseStaff from '../../assets/RiseStaff.jpg'
 export const Testimonials = () => {
 	return (
 		<>
-			<div className='bg-gradient-to-bl from-[#92f0ce] via-white to-[#9294f0]'>
+			<div className='bg-white'>
 				<div className='pb-20'>
 					<Swiper
 						modules={[Pagination]}
@@ -23,7 +23,7 @@ export const Testimonials = () => {
 						pagination={{ clickable: true }}
 					>
 						<SwiperSlide>
-							<div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 bg-white text-black border-black sm:border-none mt-32 sm:my-10 md:mx-[5.2rem] lg:mx-20 lg:divide-x-4 lg:divide-black sm:mx-5 sm:p-7 text-center'>
+							<div className='flex md:flex-col sm:flex-col w-80% border-4 text-black border-black sm:border-none mt-32 sm:my-10 md:mx-[8rem] lg:mx-12 lg:divide-x-4 lg:divide-black sm:mx-5 sm:p-7 text-center'>
 								<div className='flex flex-col px-12 py-10 sm:px-0'>
 									<img
 										src={Luminous}
@@ -53,7 +53,7 @@ export const Testimonials = () => {
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
-							<div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 bg-white text-black border-black sm:border-none mt-32 sm:my-10 md:mx-[5.2rem] lg:mx-20 lg:divide-x-4 lg:divide-black sm:mx-5 sm:p-7 text-center'>
+							<div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 bg-white text-black border-black sm:border-none mt-32 sm:my-10 md:mx-[8rem] lg:mx-20 lg:divide-x-4 lg:divide-black sm:mx-5 sm:p-7 text-center'>
 								<div className='flex flex-col px-12 py-10 sm:px-0'>
 									<img
 										src={LogoIpsum}
@@ -83,7 +83,7 @@ export const Testimonials = () => {
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
-							<div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 bg-white text-black border-black sm:border-none mt-32 mb-20 sm:my-10 md:mx-[5.2rem] lg:mx-20 lg:divide-x-4 lg:divide-black sm:mx-5 sm:p-7 text-center'>
+							<div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 bg-white text-black border-black sm:border-none mt-32 mb-20 sm:my-10 md:mx-[8rem] lg:mx-20 lg:divide-x-4 lg:divide-black sm:mx-5 sm:p-7 text-center'>
 								<div className='flex flex-col px-12 py-10 sm:px-0'>
 									<img
 										src={Rise}

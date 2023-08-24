@@ -4,6 +4,7 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
+				'arrow': "url('src/assets/arrow.svg')",
         'demandGraphic': "url('src/assets/landing/DemandGraphic.svg')",
 				'soloMembershipGraphic': "url('src/assets/membership/soloMembershipGraphic.svg')",
 				'GraphicUnderline': "url('src/assets/landing/GraphicUnderline.svg')",

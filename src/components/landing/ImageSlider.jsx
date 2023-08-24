@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Pagination, Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'

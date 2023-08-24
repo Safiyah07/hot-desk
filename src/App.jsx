@@ -55,6 +55,10 @@ function App() {
 					element={<BookTour />}
 				/>
 				<Route
+					path='/about-us'
+					element={<BookTour />}
+				/>
+				<Route
 					path='/not-found'
 					element={<NotFound />}
 				/>

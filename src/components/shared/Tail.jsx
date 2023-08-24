@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import whiteLogo from '../../assets/white-logo.svg'
+import { Link } from 'react-router-dom'
 
 export default function Tail() {
 	const footerYear = new Date().getFullYear()
@@ -7,13 +8,13 @@ export default function Tail() {
 	return (
 		<>
 			<div className='bg-black'>
-				<div className='flex px-12 pt-32 pb-24 text-5xl text-white md:px-6 md:flex-col sm:flex-col gap-44 md:gap-16 sm:gap-12 sm:px-5'>
-					<div>
+				<div className='flex pt-32 pb-24 text-5xl text-white px-7 md:px-6 md:flex-col sm:flex-col gap-44 md:gap-16 sm:gap-12 sm:px-5'>
+					<Link to='/'>
 						<img
 							src={whiteLogo}
 							alt=''
 						/>
-					</div>
+					</Link>
 					<h2 className='text-[50px] md:text-[45px] sm:text-[20px] uppercase font-extrabold'>
 						<div className='flex gap-4 sm:gap-2'>
 							<motion.div
@@ -58,27 +59,46 @@ export default function Tail() {
 						</div>
 					</h2>
 				</div>
-					<hr className='mx-5' style={{color: '#726e6e'}} />
+				<hr
+					className='mx-7'
+					style={{ color: '#726e6e' }}
+				/>
 				<footer className='pt-24'>
-					<div className='flex gap-20 px-5 text-lg font-extrabold lg:text-2xl md:gap-10 sm:px-5 sm:flex-col'>
+					<div className='flex gap-20 text-lg font-extrabold px-7 lg:text-2xl md:gap-10 sm:px-5 sm:flex-col'>
 						<div className='w-[30%] text-white'>
 							<h2 className='mb-10 uppercase sm:mb-5'>Contact</h2>
-							<p>1091 York Street <br /> Prahran <br /> Victoria, 3141</p>
+							<p>
+								1091 York Street <br /> Prahran <br /> Victoria, 3141
+							</p>
 							<br />
 							<a href='mailto:contact@hotdesk.io'>contact@hotdesk.io</a>
-              <br />
+							<br />
 							<a href='tel:+(03) 93817 1725'>(03) 93817 1725</a>
 						</div>
 						<div className='w-[30%]'>
 							<h2 className='mb-10 text-white uppercase sm:mb-5'>Navigate</h2>
 							<ul className='text-[#726e6e]'>
-								<li>Locations</li>
-								<li>Memberships</li>
-								<li>Facilities</li>
-								<li>News</li>
-								<li>Book a tour</li>
-								<li>Contact</li>
-								<li>About us</li>
+								<Link to='/locations'>
+									<li>Locations</li>
+								</Link>
+								<Link to='/memberships'>
+									<li>Memberships</li>
+								</Link>
+								<Link to='facilities'>
+									<li>Facilities</li>
+								</Link>
+								<Link to='news'>
+									<li>News</li>
+								</Link>
+								<Link to='/book-tour'>
+									<li>Book a tour</li>
+								</Link>
+								<Link to='/contact'>
+									<li>Contact</li>
+								</Link>
+								<Link to='/about-us'>
+									<li>About us</li>
+								</Link>
 								<li>Terms of use</li>
 							</ul>
 						</div>
