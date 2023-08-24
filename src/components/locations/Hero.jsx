@@ -10,7 +10,7 @@ export default function Hero() {
 	return (
 		<>
 			<div className='bg-gradient-to-br from-[#9294f0] via-white to-[#92f0ce] w-full py-20'>
-				<div className='lg:text-[84px] md:text-[40px] sm:text-[30px] font-extrabold text-black uppercase  flex justify-center flex-col items-center'>
+				<div className='lg:text-[84px] md:text-[40px] sm:text-[25px] font-extrabold text-black uppercase  flex justify-center flex-col items-center'>
 					<AnimatePresence>
 						<h2 className=''>
 							<div className='flex items-center justify-center gap-3 pb-3'>
