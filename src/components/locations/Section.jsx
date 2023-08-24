@@ -18,7 +18,7 @@ export default function Section() {
 		<>
 			{/* **************HAWTHORN***************** */}
 			<section className='relative bg-gradient-to-b from-[#ffffff] to-[#f5f5f5]'>
-				<div className='flex gap-32 px-6 py-20'>
+				<div className='flex gap-32 px-6 py-20 md:flex-col md:px-20'>
 					<div className='font-extrabold text-black lg:w-full'>
 						<div className='flex flex-col gap-10 pb-10 uppercase border-b-2'>
 							<h2 className=' lg:text-6xl'>Hawthorn</h2>
@@ -60,42 +60,42 @@ export default function Section() {
 						</div>
 
 						<div className=''>
-							<h2 className='py-10 text-2xl uppercase'>Features:</h2>
-							<div className='flex gap-10 md:items-center sm:flex-col sm:gap-1 lg:py-5'>
-								<span className='flex items-center w-1/2 gap-2 py-2 pl-4 pr-6 text-2xl bg-white border-2 border-black rounded-full md:text-2xl sm:text-lg'>
+							<h2 className='py-10 text-2xl uppercase md:text-xl'>Features:</h2>
+							<div className='flex gap-10 md:gap-3 md:items-center sm:flex-col sm:gap-1 lg:py-5'>
+								<span className='flex items-center w-1/2 gap-2 py-2 pl-4 pr-6 text-2xl bg-white border-2 border-black rounded-full md:text-xl sm:text-lg'>
 									<img
 										src={ClockIcon}
 										alt=''
-										className='h-12'
+										className='h-12 md:h-10 '
 									/>
 									24/7 Access
 								</span>
 
-								<span className='flex items-center w-1/2 gap-2 py-2 pl-4 pr-6 text-2xl bg-white border-2 border-black rounded-full md:text-2xl sm:text-lg'>
+								<span className='flex items-center w-1/2 gap-2 py-2 pl-4 pr-6 text-2xl bg-white border-2 border-black rounded-full md:text-xl sm:text-lg'>
 									<img
 										src={SnackIcon}
 										alt=''
-										className='h-12'
+										className='h-12 md:h-10'
 									/>
 									Snack Bar
 								</span>
 							</div>
 						</div>
-						<div className='flex gap-10 md:items-center sm:flex-col sm:gap-1'>
-							<span className='flex items-center w-1/2 gap-2 py-2 pl-4 pr-6 text-2xl bg-white border-2 border-black rounded-full md:text-2xl sm:text-lg'>
+						<div className='flex gap-10 md:gap-3 md:pt-3 md:items-center sm:flex-col sm:gap-1'>
+							<span className='flex items-center w-1/2 gap-2 py-2 pl-4 pr-6 text-2xl bg-white border-2 border-black rounded-full md:text-xl sm:text-lg'>
 								<img
 									src={InternetIcon}
 									alt=''
-									className='h-12'
+									className='h-12 md:h-10'
 								/>
 								Gigabit Internet
 							</span>
 
-							<span className='flex items-center w-1/2 gap-2 py-2 pl-4 pr-6 text-2xl bg-white border-2 border-black rounded-full md:text-2xl sm:text-lg'>
+							<span className='flex items-center w-1/2 gap-2 py-2 pl-4 pr-6 text-2xl bg-white border-2 border-black rounded-full md:text-xl sm:text-lg'>
 								<img
 									src={MailIcon}
 									alt=''
-									className='h-12'
+									className='h-12 md:h-10'
 								/>
 								Mail Handling
 							</span>
@@ -122,7 +122,7 @@ export default function Section() {
 
 			{/* **************RICHMOND***************** */}
 			<section className='relative bg-gradient-to-b from-[#ffffff] via-white to-[#f5f5f5]'>
-				<div className='flex gap-32 px-6 py-20'>
+				<div className='flex gap-32 px-6 py-20 md:flex-col md:px-20'>
 					<div className='font-extrabold text-black lg:w-full'>
 						<div className='flex flex-col gap-10 pb-10 uppercase border-b-2'>
 							<h2 className=' lg:text-6xl'>Richmond</h2>
@@ -170,7 +170,7 @@ export default function Section() {
 									<img
 										src={ClockIcon}
 										alt=''
-										className='h-12'
+										className='h-12 md:h-10'
 									/>
 									24/7 Access
 								</span>
@@ -179,7 +179,7 @@ export default function Section() {
 									<img
 										src={SnackIcon}
 										alt=''
-										className='h-12'
+										className='h-12 md:h-10'
 									/>
 									Snack Bar
 								</span>
@@ -190,7 +190,7 @@ export default function Section() {
 								<img
 									src={InternetIcon}
 									alt=''
-									className='h-12'
+									className='h-12 md:h-10'
 								/>
 								Gigabit Internet
 							</span>
@@ -199,7 +199,7 @@ export default function Section() {
 								<img
 									src={MailIcon}
 									alt=''
-									className='h-12'
+									className='h-12 md:h-10'
 								/>
 								Mail Handling
 							</span>
@@ -225,7 +225,7 @@ export default function Section() {
 
 			{/* **************SOUTH YARRA***************** */}
 			<section className='relative bg-gradient-to-b from-[#ffffff] via-white to-[#f5f5f5]'>
-				<div className='flex gap-32 px-6 py-20'>
+				<div className='flex gap-32 px-6 py-20 md:flex-col md:px-20'>
 					<div className='font-extrabold text-black lg:w-full'>
 						<div className='flex flex-col gap-10 pb-10 uppercase border-b-2'>
 							<h2 className=' lg:text-6xl'>South Yarra</h2>
@@ -273,7 +273,7 @@ export default function Section() {
 									<img
 										src={ClockIcon}
 										alt=''
-										className='h-12'
+										className='h-12 md:h-10'
 									/>
 									24/7 Access
 								</span>
@@ -282,7 +282,7 @@ export default function Section() {
 									<img
 										src={SnackIcon}
 										alt=''
-										className='h-12'
+										className='h-12 md:h-10'
 									/>
 									Snack Bar
 								</span>
@@ -293,7 +293,7 @@ export default function Section() {
 								<img
 									src={InternetIcon}
 									alt=''
-									className='h-12'
+									className='h-12 md:h-10'
 								/>
 								Gigabit Internet
 							</span>
@@ -302,7 +302,7 @@ export default function Section() {
 								<img
 									src={MailIcon}
 									alt=''
-									className='h-12'
+									className='h-12 md:h-10'
 								/>
 								Mail Handling
 							</span>
@@ -328,7 +328,7 @@ export default function Section() {
 
 			{/* **************WINDSOR***************** */}
 			<section className='relative bg-gradient-to-b from-[#ffffff] via-white to-[#f5f5f5]'>
-				<div className='flex gap-32 px-6 py-20'>
+				<div className='flex gap-32 px-6 py-20 md:flex-col md:px-20'>
 					<div className='font-extrabold text-black lg:w-full'>
 						<div className='flex flex-col gap-10 pb-10 uppercase border-b-2'>
 							<h2 className=' lg:text-6xl'>Windsor</h2>
@@ -376,7 +376,7 @@ export default function Section() {
 									<img
 										src={ClockIcon}
 										alt=''
-										className='h-12'
+										className='h-12 md:h-10'
 									/>
 									24/7 Access
 								</span>
@@ -385,7 +385,7 @@ export default function Section() {
 									<img
 										src={SnackIcon}
 										alt=''
-										className='h-12'
+										className='h-12 md:h-10'
 									/>
 									Snack Bar
 								</span>
@@ -396,7 +396,7 @@ export default function Section() {
 								<img
 									src={InternetIcon}
 									alt=''
-									className='h-12'
+									className='h-12 md:h-10'
 								/>
 								Gigabit Internet
 							</span>
@@ -405,7 +405,7 @@ export default function Section() {
 								<img
 									src={MailIcon}
 									alt=''
-									className='h-12'
+									className='h-12 md:h-10'
 								/>
 								Mail Handling
 							</span>
