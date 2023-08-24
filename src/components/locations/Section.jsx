@@ -16,7 +16,7 @@ import MailIcon from '../../assets/location/MailIcon.svg'
 export default function Section() {
 	return (
 		<>
-    {/* **************HAWTHORN***************** */}
+			{/* **************HAWTHORN***************** */}
 			<section className='relative bg-gradient-to-b from-[#ffffff] to-[#f5f5f5]'>
 				<div className='flex gap-32 px-6 py-20'>
 					<div className='font-extrabold text-black lg:w-full'>
@@ -102,21 +102,25 @@ export default function Section() {
 						</div>
 					</div>
 
-					<div className='sticky top-0 flex flex-col gap-10 lg:pr-20'>
-						<img
-							src={Section1}
-							alt=''
-              className='sticky top-0'
-						/>
-						<img
-							src={Section2}
-							alt=''
-						/>
+					<div className='flex flex-col gap-10 lg:pr-20'>
+						<div className='sticky top-5'>
+							<img
+								src={Section1}
+								alt=''
+								className=''
+							/>
+							<br /> <br />
+							<img
+								src={Section2}
+								alt=''
+								className=''
+							/>
+						</div>
 					</div>
 				</div>
 			</section>
 
-          {/* **************RICHMOND***************** */}
+			{/* **************RICHMOND***************** */}
 			<section className='relative bg-gradient-to-b from-[#ffffff] via-white to-[#f5f5f5]'>
 				<div className='flex gap-32 px-6 py-20'>
 					<div className='font-extrabold text-black lg:w-full'>
@@ -203,19 +207,23 @@ export default function Section() {
 					</div>
 
 					<div className='sticky flex flex-col gap-10 lg:pr-20'>
-						<img
-							src={Section3}
-							alt=''
-						/>
-						<img
-							src={Section4}
-							alt=''
-						/>
+						<div className='sticky top-5'>
+							<img
+								src={Section3}
+								alt=''
+							/>
+							<br />
+							<br />
+							<img
+								src={Section4}
+								alt=''
+							/>
+						</div>
 					</div>
 				</div>
 			</section>
 
-          {/* **************SOUTH YARRA***************** */}
+			{/* **************SOUTH YARRA***************** */}
 			<section className='relative bg-gradient-to-b from-[#ffffff] via-white to-[#f5f5f5]'>
 				<div className='flex gap-32 px-6 py-20'>
 					<div className='font-extrabold text-black lg:w-full'>
@@ -302,19 +310,23 @@ export default function Section() {
 					</div>
 
 					<div className='sticky flex flex-col gap-10 lg:pr-20'>
-						<img
-							src={Section5}
-							alt=''
-						/>
-						<img
-							src={Section6}
-							alt=''
-						/>
+						<div className='sticky top-5'>
+							<img
+								src={Section5}
+								alt=''
+							/>
+							<br />
+							<br />
+							<img
+								src={Section6}
+								alt=''
+							/>
+						</div>
 					</div>
 				</div>
 			</section>
 
-          {/* **************WINDSOR***************** */}
+			{/* **************WINDSOR***************** */}
 			<section className='relative bg-gradient-to-b from-[#ffffff] via-white to-[#f5f5f5]'>
 				<div className='flex gap-32 px-6 py-20'>
 					<div className='font-extrabold text-black lg:w-full'>
@@ -401,14 +413,18 @@ export default function Section() {
 					</div>
 
 					<div className='sticky flex flex-col gap-10 lg:pr-20'>
-						<img
-							src={Section7}
-							alt=''
-						/>
-						<img
-							src={Section8}
-							alt=''
-						/>
+						<div className='sticky top-5'>
+							<img
+								src={Section7}
+								alt=''
+							/>
+							<br />
+							<br />
+							<img
+								src={Section8}
+								alt=''
+							/>
+						</div>
 					</div>
 				</div>
 			</section>
