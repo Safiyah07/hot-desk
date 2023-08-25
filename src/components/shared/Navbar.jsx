@@ -29,8 +29,8 @@ export default function Navbar() {
 		},
 		{
 			id: 4,
-			title: 'News',
-			link: '/news',
+			title: 'Blog',
+			link: '/blog',
 		},
 		{
 			id: 5,

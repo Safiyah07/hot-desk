@@ -43,7 +43,7 @@ function App() {
 					element={<Facilities />}
 				/>
 				<Route
-					path='/news'
+					path='/blog'
 					element={<News />}
 				/>
 				<Route
