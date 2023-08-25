@@ -84,11 +84,11 @@ export default function Tail() {
 								<Link to='/memberships'>
 									<li>Memberships</li>
 								</Link>
-								<Link to='facilities'>
+								<Link to='/facilities'>
 									<li>Facilities</li>
 								</Link>
-								<Link to='news'>
-									<li>News</li>
+								<Link to='/blog'>
+									<li>Blog</li>
 								</Link>
 								<Link to='/book-tour'>
 									<li>Book a tour</li>
@@ -96,19 +96,29 @@ export default function Tail() {
 								<Link to='/contact'>
 									<li>Contact</li>
 								</Link>
-								<Link to='/about-us'>
+								<Link to='/about'>
 									<li>About us</li>
 								</Link>
-								<li>Terms of use</li>
 							</ul>
 						</div>
 						<div className='lg:w-[35%] font-extrabold mb-20'>
 							<h2 className='mb-10 text-white uppercase sm:mb-5'>Template</h2>
 							<ul className='text-[#726e6e] font-extrabold'>
-								<li>Style Guide</li>
-								<li>Getting Started</li>
-								<li>Changelog</li>
-								<li>Licenses</li>
+								<Link to='/facilities'>
+									<li>Facilities</li>
+								</Link>
+								<Link to='/blog'>
+									<li>Blog</li>
+								</Link>
+								<Link to='/book-tour'>
+									<li>Book a tour</li>
+								</Link>
+								<Link to='/contact'>
+									<li>Contact</li>
+								</Link>
+								<Link to='/about'>
+									<li>About us</li>
+								</Link>
 							</ul>
 						</div>
 					</div>

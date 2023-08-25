@@ -18,6 +18,7 @@ import News from './pages/News'
 import Contact from './pages/Contact'
 import BookTour from './pages/BookTour'
 import NotFound from './pages/NotFound'
+import About from './pages/About'
 
 function App() {
 	const router = createBrowserRouter(
@@ -55,8 +56,8 @@ function App() {
 					element={<BookTour />}
 				/>
 				<Route
-					path='/about-us'
-					element={<BookTour />}
+					path='/about'
+					element={<About />}
 				/>
 				<Route
 					path='/not-found'

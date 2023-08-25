@@ -1,9 +1,9 @@
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Hero() {
 	return (
 		<>
-			<div className='bg-gradient-to-br from-[#92f0ce] via-white to-[#9294f0] w-full lg:py-32 md:py-24 sm:py-24'>
+			<div className='bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-[#c7f092] via-white to-[#92f0ce] w-full lg:py-32 md:py-24 sm:py-24'>
 				<div className='lg:text-[84px] md:text-[40px] sm:text-[30px] font-extrabold text-black uppercase flex flex-col sm:pl-2 pl-7'>
 					<AnimatePresence>
 						<h2 className=''>
@@ -20,7 +20,7 @@ export default function Hero() {
 										ease: [0, 0.71, 0.2, 1.01],
 									}}
 								>
-									News,
+									We
 								</motion.div>
 								<motion.div
 									initial={{ opacity: 0 }}
@@ -30,7 +30,7 @@ export default function Hero() {
 									transition={{ duration: 1, delay: 0.5 }}
 									className='px-4 bg-white border-4 border-black sm:border-2'
 								>
-									Insights
+									Created
 								</motion.div>
 							</div>
 
@@ -43,7 +43,7 @@ export default function Hero() {
 									transition={{ duration: 1, delay: 0.7 }}
 									className='px-4 bg-white border-4 border-black sm:border-2'
 								>
-									&
+									Hotdesk
 								</motion.div>
 								<motion.div
 									initial={{ opacity: 0 }}
@@ -53,7 +53,7 @@ export default function Hero() {
 									transition={{ duration: 1, delay: 0.9 }}
 									className='px-4 bg-white border-4 border-black sm:border-2'
 								>
-									Events.
+									For You
 								</motion.div>
 							</div>
 						</h2>
@@ -63,3 +63,4 @@ export default function Hero() {
 		</>
 	)
 }
+

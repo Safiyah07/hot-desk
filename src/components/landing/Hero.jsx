@@ -9,29 +9,6 @@ export default function Hero() {
 		visible: { opacity: 1, transition: { duration: 1 } },
 	}
 
-	// const fadeInHero = [
-	// 	{
-	// 		id: 1,
-	// 		info: 'space for',
-	// 	},
-	// 	{
-	// 		id: 2,
-	// 		info: 'your',
-	// 	},
-	// 	{
-	// 		id: 3,
-	// 		info: 'next',
-	// 	},
-	// 	{
-	// 		id: 4,
-	// 		info: 'big',
-	// 	},
-	// 	{
-	// 		id: 5,
-	// 		info: 'move',
-	// 	},
-	// ]
-
 	return (
 		<>
 			<div className='flex uppercase'>
