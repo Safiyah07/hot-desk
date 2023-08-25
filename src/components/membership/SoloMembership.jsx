@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import WhiteButton from '../shared/WhiteButton'
 
 export default function SoloMembership() {
@@ -37,12 +36,12 @@ export default function SoloMembership() {
 						</div>
 
 						<div className='pt-6 m-auto w-[90%] text-center'>
-							<Link
-								to='/memberships'
+							<a
+								href='/memberships'
 								className='pt-6 m-auto w-[90%] text-center'
 							>
 								<WhiteButton> Start now</WhiteButton>
-							</Link>
+							</a>
 						</div>
 					</div>
 
@@ -75,12 +74,12 @@ export default function SoloMembership() {
 						</div>
 
 						<div className='pt-6 m-auto w-[90%] text-center'>
-							<Link
-								to='/memberships'
+							<a
+								href='/memberships'
 								className='pt-6 m-auto w-[90%] text-center'
 							>
 								<WhiteButton>Start Now</WhiteButton>
-							</Link>
+							</a>
 						</div>
 					</div>
 				</div>

@@ -78,47 +78,47 @@ export default function Tail() {
 						<div className='w-[30%]'>
 							<h2 className='mb-10 text-white uppercase sm:mb-5'>Navigate</h2>
 							<ul className='text-[#726e6e]'>
-								<Link to='/locations'>
+								<a href='/locations'>
 									<li>Locations</li>
-								</Link>
-								<Link to='/memberships'>
+								</a>
+								<a href='/memberships'>
 									<li>Memberships</li>
-								</Link>
-								<Link to='/facilities'>
+								</a>
+								<a href='/facilities'>
 									<li>Facilities</li>
-								</Link>
-								<Link to='/blog'>
+								</a>
+								<a href='/blog'>
 									<li>Blog</li>
-								</Link>
-								<Link to='/book-tour'>
+								</a>
+								<a href='/book-tour'>
 									<li>Book a tour</li>
-								</Link>
-								<Link to='/contact'>
+								</a>
+								<a href='/contact'>
 									<li>Contact</li>
-								</Link>
-								<Link to='/about'>
+								</a>
+								<a href='/about'>
 									<li>About us</li>
-								</Link>
+								</a>
 							</ul>
 						</div>
 						<div className='lg:w-[35%] font-extrabold mb-20'>
 							<h2 className='mb-10 text-white uppercase sm:mb-5'>Template</h2>
 							<ul className='text-[#726e6e] font-extrabold'>
-								<Link to='/facilities'>
+								<a href='/facilities'>
 									<li>Facilities</li>
-								</Link>
-								<Link to='/blog'>
+								</a>
+								<a href='/blog'>
 									<li>Blog</li>
-								</Link>
-								<Link to='/book-tour'>
+								</a>
+								<a href='/book-tour'>
 									<li>Book a tour</li>
-								</Link>
-								<Link to='/contact'>
+								</a>
+								<a href='/contact'>
 									<li>Contact</li>
-								</Link>
-								<Link to='/about'>
+								</a>
+								<a href='/about'>
 									<li>About us</li>
-								</Link>
+								</a>
 							</ul>
 						</div>
 					</div>
