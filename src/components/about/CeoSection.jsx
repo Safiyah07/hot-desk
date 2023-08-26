@@ -1,4 +1,4 @@
-import CeoImage1 from '../../assets/luminousStaff.jpg'
+import CeoImage1 from '../../assets/LuminousStaff.jpg'
 import BlackButton from '../shared/BlackButton'
 import { Link } from 'react-router-dom'
 
