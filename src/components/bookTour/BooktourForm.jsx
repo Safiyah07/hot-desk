@@ -6,7 +6,7 @@ import BlackButton from '../shared/BlackButton'
 export default function BooktourForm() {
 	return (
 		<>
-			<div className='text-black bg-gradient-to-br from-[#92f0ce] via-white to-[#c7f092] py-24'>
+			<div className='text-black bg-gradient-to-br from-[#92f0ce] from-10% via-white via-20% to-[#c7f092] to-130% py-24'>
 				<div className='flex flex-col text-center '>
 					<div className='lg:text-[84px] md:text-[40px] sm:text-[25px] font-extrabold text-black uppercase flex justify-center flex-col items-center pb-10'>
 						<AnimatePresence>

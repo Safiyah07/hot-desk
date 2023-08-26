@@ -6,11 +6,12 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
   will-change: scroll-position;
+  background-attachment: scroll;
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'open sans', sans-serif;
 }
 
@@ -19,11 +20,6 @@ h2,
 h3,
 h4, button, label {
 	font-family: 'Unbounded', sans-serif;
-}
-
-.custom-select-container {
-  position: relative;
-  width: 200px; /* Adjust the width as needed */
 }
 
 select {

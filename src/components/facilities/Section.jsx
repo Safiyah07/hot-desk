@@ -44,7 +44,7 @@ export default function Section() {
 					<img
 						src={BodyImage1}
 						alt=''
-						className=' md:w-[60%] md:[h-60%] sm:[w-45%] sm:[h-45%] rounded-full border-4 border-black'
+						className='md:w-[60%] md:[h-60%] sm:[w-45%] sm:[h-45%] rounded-full border-4 border-black'
 					/>
 				</div>
 			</div>
