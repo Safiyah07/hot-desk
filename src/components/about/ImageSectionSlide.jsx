@@ -1,28 +1,22 @@
-import { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 import Section2 from '../../assets/location/section2.jpg'
 import Section3 from '../../assets/location/section3.jpg'
 import Section5 from '../../assets/location/section5.jpg'
 
 export default function ImageSectionSlide() {
-	const [ref, inView] = useInView({
-		triggerOnce: false, // Only trigger the animation once
-	})
-
-	// useEffect(() => {
-	// 	if (inView) {
-	// 		// In view, trigger the animation
-	// 	}
-	// }, [inView])
 	return (
 		<>
 			<div>
 				<motion.div
-					ref={ref}
-					initial={{ opacity: 0, y: 50 }}
-					animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-					transition={{ duration: 1 }}
+					initial={{ opacity: 0 }}
+					viewport={{ once: false }}
+					animate={{ opacity: 1 }}
+					mode='wait'
+					transition={{
+						duration: 0.8,
+						delay: 0.3,
+						ease: [0, 0.71, 0.2, 1.01],
+					}}
 					className='flex w-1/2 gap-10 py-10 h-1/2'
 				>
 					<img
