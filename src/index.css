@@ -4,14 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
-  font-family: 'open sans', sans-serif;
+  will-change: scroll-position;
 }
 
-html {
-	scroll-behavior: smooth;
-	will-change: scroll-position;
+body {
+  font-family: 'open sans', sans-serif;
 }
 
 h1,
