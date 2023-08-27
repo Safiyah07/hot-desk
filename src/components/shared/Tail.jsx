@@ -18,7 +18,6 @@ export default function Tail() {
 		}
 
 		window.addEventListener('scroll', showArrow)
-		console.log(window.scrollY)
 
 		return () => window.removeEventListener('scroll', showArrow)
 	}, [])

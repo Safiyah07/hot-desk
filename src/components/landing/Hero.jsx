@@ -1,13 +1,9 @@
 import { Link } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import HeroImage from '../../assets/landing/hero-img.jpg'
 import Button from '../shared/BlackButton'
 
 export default function Hero() {
-	const fadeInVariants = {
-		hidden: { opacity: 0 },
-		visible: { opacity: 1, transition: { duration: 1 } },
-	}
 
 	return (
 		<>
@@ -15,7 +11,7 @@ export default function Hero() {
 				<div className='bg-gradient-to-br from-[#92f0ce] via-white to-[#c7f092] md:w-full sm:w-full lg:w-1/2'>
 					<div className='flex flex-col items-center justify-center text-black lg:py-10 md:py-24 sm:py-16 lg:hidden'>
 						<h2 className='md:text-[40px] sm:text-[30px] uppercase text-black font-extrabold'>
-							<AnimatePresence>
+							
 								<div className='flex gap-2'>
 									{/* {fadeInHero.map((info) => (
 										<>
@@ -84,7 +80,6 @@ export default function Hero() {
 										big move.
 									</motion.div>
 								</div>
-							</AnimatePresence>
 						</h2>
 
 						<div className='pt-8 font-extrabold tracking-wide text-center normal-case md:text-2xl sm:text-xl'>

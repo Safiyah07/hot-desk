@@ -4,7 +4,7 @@ import ImageSectionSlide from './ImageSectionSlide'
 export default function Hero() {
 	return (
 		<>
-			<div className='bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-[#c7f092] via-[#f5f5f5] to-[#92f0ce] sm:bg-gradient-to-br sm:from-[#92f0ce] sm:via-[#c7f092] sm:to-[#9492f0] sm:to-90% w-full lg:py-24 md:py-16 sm:py-16'>
+			<div className='bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-[#c7f092] via-[#f5f5f5] to-[#92f0ce] sm:bg-gradient-to-br sm:from-[#92f0ce] sm:via-[#c7f092] sm:to-[#9492f0] sm:to-90% w-full lg:py-24 md:py-16 sm:py-16 overflow-hidden'>
 				<div className='flex flex-col font-black text-black sm:pl-2 pl-7'>
 					<AnimatePresence>
 						<h2 className='lg:text-[84px] md:text-[40px] sm:text-[23px] uppercase'>

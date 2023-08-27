@@ -34,22 +34,32 @@ select {
   cursor: pointer;
 }
 
-/* swiper-custom.css */
-
-/* Change the background color of active bullet */
-.swiper-pagination-bullet-active {
-  background-color: #ff0000; /* Your desired color */
+/* Marquee.css */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-/* Change the background color of inactive bullets */
-.swiper-pagination-bullet {
-  background-color: #999; /* Your desired color */
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
 }
 
-/* Optionally, change other styles like size, margin, etc. */
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  margin: 5px;
+.marquee-content span {
+  display: inline-block;
+  padding-right: 2rem; /* Adjust this value as needed for spacing */
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
 
