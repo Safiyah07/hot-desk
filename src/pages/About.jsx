@@ -1,6 +1,7 @@
-import CeoSection from '../components/about/CeoSection'
+import FirstCeoSection from '../components/about/FirstCeoSection'
 import Hero from '../components/about/Hero'
 import HotdeskNumbers from '../components/about/HotdeskNumbers'
+import SecondCeoSection from '../components/about/SecondCeoSection'
 import CompaniesFooter from '../components/shared/CompaniesFooter'
 
 export default function About() {
@@ -8,7 +9,8 @@ export default function About() {
     <div>
       <Hero />
       <HotdeskNumbers />
-      <CeoSection />
+      <FirstCeoSection />
+      <SecondCeoSection />
       <CompaniesFooter />
     </div>
   )

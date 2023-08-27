@@ -2,10 +2,10 @@ export default function HotdeskNumbers() {
 	return (
 		<section className='relative font-black text-black'>
 			<div className='flex gap-32 md:gap-20 sm:gap-12 sm:flex-col md:flex-col'>
-				<div className='flex flex-col lg:w-[75%] gap-10 py-20 pl-20 md:py-8 sm:py-6 sm:pl-5'>
+				<div className='flex flex-col lg:w-[75%] gap-10 py-20 pl-20 md:px-20 md:py-8 sm:py-6 sm:pl-5'>
 					<div className='sticky top-16'>
 						<div className='flex flex-col gap-6'>
-							<h2 className='lg:text-[24px] md:text-[18px] sm:text-[18px] uppercase'>
+							<h2 className='lg:text-[24px] md:text-[18px] sm:text-[18px] uppercase sm:pt-12'>
 								HOTDESK BY NUMBERS
 							</h2>
 							<h2 className='text-[55px] md:text-[40px] sm:text-[20px]'>
@@ -29,7 +29,7 @@ export default function HotdeskNumbers() {
 							</div>
 						</div>
 
-						<div className='flex flex-col gap-10 py-10 md:mx-12   border-b-4 border-[#92f0ce]'>
+						<div className='flex flex-col gap-10 py-10 md:mx-12 border-b-4 border-[#92f0ce]'>
 							<h2 className='uppercase lg:text-[6rem] md:text-[40px] sm:text-3xl'>
 								200+
 							</h2>
