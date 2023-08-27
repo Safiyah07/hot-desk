@@ -17,7 +17,7 @@ export default function TeamMembership() {
 							Our flexible and modern workspace allows you to work when you need
 							to and where you want to.
 						</p>
-						<p className='px-10 py-6 text-2xl border-b-2 md:text-2xl sm:text-lg lg:h-[20rem]'>
+						<div className='px-10 py-6 text-2xl border-b-2 md:text-2xl sm:text-lg lg:h-[20rem]'>
 							<ul className='list-disc'>
 								<li className='pb-2'>High-speed internet</li>
 								<li className='pb-2'>Comfortable seating options</li>
@@ -26,7 +26,7 @@ export default function TeamMembership() {
 								<li className='pb-2'>24/7 Access</li>
                 <li className='pb-2'>Access to Hotdesk Events</li>
 							</ul>
-						</p>
+						</div>
             <div className='flex sm:flex-col sm:gap-3 border-b-2 py-6 px-5 text-xl font-extrabold md:text-xl sm:text-[16px] sm:px-0'>
 							<p className='flex items-center w-auto h-12 px-5 mx-5 text-black bg-white rounded-3xl sm:w-44'>
               $1,200 per month
@@ -54,7 +54,7 @@ export default function TeamMembership() {
 							Workspace options to suit every demand with access to all centres
 							and amenities.
 						</p>
-						<p className='px-10 py-6 text-2xl border-b-2 md:text-2xl sm:text-lg lg:h-[20rem]'>
+						<div className='px-10 py-6 text-2xl border-b-2 md:text-2xl sm:text-lg lg:h-[20rem]'>
 							<ul className='list-disc'>
 								<li className='pb-2'>Dedicated desk</li>
 								<li className='pb-2'>Access to Hotdesk Events</li>
@@ -64,7 +64,7 @@ export default function TeamMembership() {
 								<li className='pb-2'>Comfortable seating options</li>
 								<li className='pb-2'>Shared kitchen facilities</li>
 							</ul>
-						</p>
+						</div>
             <div className='flex sm:flex-col sm:gap-3 border-b-2 py-6 px-5 text-xl font-extrabold md:text-xl sm:text-[16px] sm:px-0'>
 							<p className='flex items-center w-auto h-12 px-5 mx-5 text-black bg-white rounded-3xl sm:w-44'>
               $3,000 per month

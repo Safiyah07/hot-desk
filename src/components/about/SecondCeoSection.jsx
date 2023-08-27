@@ -28,11 +28,16 @@ export default function SecondCeoSection() {
 	return (
 		<>
 			<div className='bg-[#f5f5f5] font-black text-black flex flex-col gap-10 items-center py-20'>
-				<h2 className='pb-5 text-2xl uppercase md:text-xl sm:text-lg'>Meet the hotdesk crew</h2>
+				<h2 className='pb-5 text-2xl uppercase md:text-xl sm:text-lg'>
+					Meet the hotdesk crew
+				</h2>
 				<div className='flex items-center justify-center m-auto md:gap-16 md:flex-col sm:flex-col '>
 					{staffs.map((staff) => (
 						<>
-							<div className='flex flex-col items-center justify-center gap-6 text-xl sm:py-6 md:text-lg'>
+							<div
+								className='flex flex-col items-center justify-center gap-6 text-xl sm:py-6 md:text-lg'
+								key={staff.id}
+							>
 								<img
 									src={staff.img}
 									alt=''

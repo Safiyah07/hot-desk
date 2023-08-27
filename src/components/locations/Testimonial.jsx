@@ -11,6 +11,35 @@ import LuminousStaff from '../../assets/LuminousStaff.jpg'
 import RiseStaff from '../../assets/RiseStaff.jpg'
 
 export const Testimonials = () => {
+	const testimonialSection = [
+		{
+			id: 1,
+			logo: Luminous,
+			message:
+				'We found the opportunity to hit the ground running with minimal overheads was great. Having a huge variety of facilities at our fingertips has empowered the team to do better work.',
+			name: 'Lisa Anderson',
+			position: 'Luminous Group',
+			image: LuminousStaff,
+		},
+		{
+			id: 2,
+			logo: LogoIpsum,
+			message:
+				"Hotdesk has been a lifesaver for me as a remote worker. I was tired of working from home and needed a change of scenery, but didn't want the hassle of committing to a long-term lease",
+			name: 'Andrew Simpson',
+			position: 'Freelance Designer',
+			image: LogoIpsumStaff,
+		},
+		{
+			id: 3,
+			logo: Rise,
+			message:
+				'Hotdesk has exceeded all our expectations. The staff are incredibly accommodating, and the space is always clean and well-maintained. We love the sense of community that exists here',
+			name: 'Luke Phillips',
+			position: 'Content Creator',
+			image: RiseStaff,
+		},
+	]
 	return (
 		<>
 			<div className='bg-gradient-to-bl from-[#92f0ce] via-white to-[#9294f0]'>

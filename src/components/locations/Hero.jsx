@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import Hero1 from '../../assets/membership/hero1.jpg'
 import Hero2 from '../../assets/membership/hero2.jpg'
@@ -11,8 +11,8 @@ export default function Hero() {
 		<>
 			<div className='bg-gradient-to-br from-[#9294f0] via-white to-[#92f0ce] w-full py-20'>
 				<div className='lg:text-[84px] md:text-[40px] sm:text-[25px] font-extrabold text-black uppercase  flex justify-center flex-col items-center'>
-					<AnimatePresence>
-						<h2 className=''>
+					
+						<h2>
 							<div className='flex items-center justify-center gap-3 pb-3'>
 								<motion.div
 									className='px-4 bg-white border-4 border-black sm:border-2'
@@ -176,7 +176,6 @@ export default function Hero() {
 								</Link>
 							</p>
 						</div>
-					</AnimatePresence>
 				</div>
 			</div>
 		</>

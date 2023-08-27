@@ -20,20 +20,17 @@ export default function CeoSection() {
 								BUSINESSES.”
 							</h2>
 							<br />
-              
-              <div className='lg:text-2xl md:text-lg sm:text-lg'>
-                
-							<p className='normal-case list-disc lg:pb-20 md:pb-10 sm:pb-10'>
-								“Our workspace is designed to encourage individuals, startups
-								and businesses to thrive. We're a place where people who share a
-								common goal can work together, help each other and create
-								something truly awesome.”
-							</p>
-							<h2 className='uppercase '>
-								Camilla Price
-							</h2>
-							<p>Founder & CEO</p>
-              </div>
+
+							<div className='lg:text-2xl md:text-lg sm:text-lg'>
+								<p className='normal-case list-disc lg:pb-20 md:pb-10 sm:pb-10'>
+									“Our workspace is designed to encourage individuals, startups
+									and businesses to thrive. We're a place where people who share
+									a common goal can work together, help each other and create
+									something truly awesome.”
+								</p>
+								<h2 className='uppercase '>Camilla Price</h2>
+								<p>Founder & CEO</p>
+							</div>
 						</div>
 					</div>
 				</div>
