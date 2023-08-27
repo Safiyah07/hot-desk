@@ -40,6 +40,7 @@ export const Testimonials = () => {
 			image: RiseStaff,
 		},
 	]
+
 	return (
 		<>
 			<div className='bg-gradient-to-bl from-[#92f0ce] via-white to-[#9294f0]'>
@@ -51,96 +52,35 @@ export const Testimonials = () => {
 						loop={true}
 						pagination={{ clickable: true }}
 					>
-						<SwiperSlide>
-							<div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 bg-white text-black border-black sm:border-none mt-32 sm:my-10 md:mx-[5.2rem] lg:mx-20 lg:divide-x-4 lg:divide-black sm:mx-5 sm:p-7 text-center'>
-								<div className='flex flex-col px-12 py-10 sm:px-0'>
-									<img
-										src={Luminous}
-										alt=''
-										className='pb-20 w-44 sm:pb-10 sm:m-auto'
-									/>
-									<p className='pb-20 text-3xl font-extrabold md:text-xl sm:text-lg sm:pb-10'>
-										“We found the opportunity to hit the ground running with
-										minimal overheads was great. Having a huge variety of
-										facilities at our fingertips has empowered the team to do
-										better work.”
-									</p>
-									<h2 className='text-xl font-extrabold md:text-xl sm:text-lg'>
-										LISA ANDERSON
-									</h2>
-									<p className='text-lg font-extrabold md:text-md sm:text-lg'>
-										Luminous Group
-									</p>
+						{testimonialSection.map((section) => (
+							<SwiperSlide key={section.id}>
+								<div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 bg-white text-black border-black sm:border-none mt-32 mb-20 sm:my-10 md:mx-[5.2rem] lg:mx-20 lg:divide-x-4 lg:divide-black sm:mx-5 sm:p-7 text-center'>
+									<div className='flex flex-col px-12 py-10'>
+										<img
+											src={section.logo}
+											alt=''
+											className='pb-20 w-44 sm:pb-10'
+										/>
+										<p className='pb-20 text-3xl font-extrabold md:text-xl sm:text-lg sm:pb-10'>
+											“{section.message}”
+										</p>
+										<h2 className='text-xl font-extrabold uppercase md:text-xl sm:text-lg'>
+											{section.name}
+										</h2>
+										<p className='text-lg font-extrabold md:text-md sm:text-lg'>
+											{section.position}
+										</p>
+									</div>
+									<div className='px-10 py-20 sm:flex sm:justify-center md:py-10 sm:py-0 sm:px-2 md:border-t-4 md:border-t-black sm:border-t-black sm:pb-10'>
+										<img
+											src={section.image}
+											alt=''
+											className='border-4 border-black rounded-[50%] md:w-1/2 sm:w-[90%] md:m-auto'
+										/>
+									</div>
 								</div>
-								<div className='px-10 py-20 md:py-10 sm:py-0 sm:px-2 md:border-t-4 md:border-t-black sm:border-t-black'>
-									<img
-										src={LuminousStaff}
-										alt=''
-										className='border-4 border-black rounded-[50%] md:w-1/2 md:m-auto '
-									/>
-								</div>
-							</div>
-						</SwiperSlide>
-						<SwiperSlide>
-							<div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 bg-white text-black border-black sm:border-none mt-32 sm:my-10 md:mx-[5.2rem] lg:mx-20 lg:divide-x-4 lg:divide-black sm:mx-5 sm:p-7 text-center'>
-								<div className='flex flex-col px-12 py-10 sm:px-0'>
-									<img
-										src={LogoIpsum}
-										alt=''
-										className='pb-20 w-44 sm:pb-10 sm:m-auto'
-									/>
-									<p className='pb-20 text-3xl font-extrabold md:text-xl sm:text-lg sm:pb-10'>
-										“Hotdesk has been a lifesaver for me as a remote worker. I
-										was tired of working from home and needed a change of
-										scenery, but didn't want the hassle of committing to a
-										long-term lease”
-									</p>
-									<h2 className='text-xl font-extrabold md:text-xl sm:text-lg'>
-										ANDREW SIMPSON
-									</h2>
-									<p className='text-lg font-extrabold md:text-md sm:text-lg'>
-										Freelance Designer
-									</p>
-								</div>
-								<div className='px-10 py-20 md:py-10 sm:py-0 sm:px-2 md:border-t-4 md:border-t-black sm:border-t-black'>
-									<img
-										src={LogoIpsumStaff}
-										alt=''
-										className='border-4 border-black rounded-[50%] md:w-1/2 md:m-auto '
-									/>
-								</div>
-							</div>
-						</SwiperSlide>
-						<SwiperSlide>
-							<div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 bg-white text-black border-black sm:border-none mt-32 mb-20 sm:my-10 md:mx-[5.2rem] lg:mx-20 lg:divide-x-4 lg:divide-black sm:mx-5 sm:p-7 text-center'>
-								<div className='flex flex-col px-12 py-10 sm:px-0'>
-									<img
-										src={Rise}
-										alt=''
-										className='pb-20 w-44 sm:pb-10 sm:m-auto'
-									/>
-									<p className='pb-20 text-3xl font-extrabold md:text-xl sm:text-lg sm:pb-10'>
-										“Hotdesk has exceeded all our expectations. The staff are
-										incredibly accommodating, and the space is always clean and
-										well-maintained. We love the sense of community that exists
-										here.”
-									</p>
-									<h2 className='text-xl font-extrabold md:text-xl sm:text-lg'>
-										LUKE PHILLIPS
-									</h2>
-									<p className='text-lg font-extrabold md:text-md sm:text-lg'>
-										Content Creator
-									</p>
-								</div>
-								<div className='px-10 py-20 md:py-10 sm:py-0 sm:px-2 md:border-t-4 md:border-t-black sm:border-t-black'>
-									<img
-										src={RiseStaff}
-										alt=''
-										className='border-4 border-black rounded-[50%] md:w-1/2 md:m-auto '
-									/>
-								</div>
-							</div>
-						</SwiperSlide>
+							</SwiperSlide>
+						))}
 					</Swiper>
 				</div>
 			</div>

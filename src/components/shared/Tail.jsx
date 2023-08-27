@@ -1,10 +1,28 @@
 import { motion } from 'framer-motion'
 import whiteLogo from '../../assets/white-logo.svg'
 import { Link } from 'react-router-dom'
+import { FaAngleUp } from 'react-icons/fa6'
+import { useEffect, useState } from 'react'
 
 export default function Tail() {
 	const footerYear = new Date().getFullYear()
 
+	const [scrollValue, setScrollValue] = useState(false)
+	useEffect(() => {
+		const showArrow = () => {
+			if (window.scrollY >= 100) {
+				setScrollValue(true)
+			} else {
+				setScrollValue(false)
+			}
+		}
+
+		window.addEventListener('scroll', showArrow)
+		console.log(window.scrollY)
+
+		return () => window.removeEventListener('scroll', showArrow)
+	}, [])
+	
 	return (
 		<>
 			<div className='bg-black'>
@@ -127,6 +145,18 @@ export default function Tail() {
 						{' '}
 						Copyright &copy; {footerYear} All rights reserved
 					</p>
+
+					<div className={scrollValue ? 'w-[30px]' : 'hidden'}>
+					<a
+						href='#top'
+						className='fixed p-3 transition ease-in-out bg-white rounded-full bottom-5 right-5'
+					>
+						<FaAngleUp
+							color='#000'
+							size={20}
+						/>
+					</a>
+				</div>
 				</footer>
 			</div>
 		</>
