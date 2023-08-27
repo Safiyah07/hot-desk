@@ -96,25 +96,25 @@ export default function Tail() {
 							<h2 className='mb-10 text-white uppercase sm:mb-5'>Navigate</h2>
 							<ul className='text-[#726e6e]'>
 								<a href='/locations'>
-									<li>Locations</li>
+									<li className='transition ease-in-out hover:text-white'>Locations</li>
 								</a>
 								<a href='/memberships'>
-									<li>Memberships</li>
+									<li className='transition ease-in-out hover:text-white'>Memberships</li>
 								</a>
 								<a href='/facilities'>
-									<li>Facilities</li>
+									<li className='transition ease-in-out hover:text-white'>Facilities</li>
 								</a>
 								<a href='/blog'>
-									<li>Blog</li>
+									<li className='transition ease-in-out hover:text-white'>Blog</li>
 								</a>
 								<a href='/book-tour'>
-									<li>Book a tour</li>
+									<li className='transition ease-in-out hover:text-white'>Book a tour</li>
 								</a>
 								<a href='/contact'>
-									<li>Contact</li>
+									<li className='transition ease-in-out hover:text-white'>Contact</li>
 								</a>
 								<a href='/about'>
-									<li>About us</li>
+									<li className='transition ease-in-out hover:text-white'>About us</li>
 								</a>
 							</ul>
 						</div>
@@ -122,19 +122,19 @@ export default function Tail() {
 							<h2 className='mb-10 text-white uppercase sm:mb-5'>Template</h2>
 							<ul className='text-[#726e6e] font-extrabold'>
 								<a href='/facilities'>
-									<li>Facilities</li>
+									<li className='transition ease-in-out hover:text-white'>Facilities</li>
 								</a>
 								<a href='/blog'>
-									<li>Blog</li>
+									<li className='transition ease-in-out hover:text-white'>Blog</li>
 								</a>
 								<a href='/book-tour'>
-									<li>Book a tour</li>
+									<li className='transition ease-in-out hover:text-white'>Book a tour</li>
 								</a>
 								<a href='/contact'>
-									<li>Contact</li>
+									<li className='transition ease-in-out hover:text-white'>Contact</li>
 								</a>
 								<a href='/about'>
-									<li>About us</li>
+									<li className='transition ease-in-out hover:text-white'>About us</li>
 								</a>
 							</ul>
 						</div>
