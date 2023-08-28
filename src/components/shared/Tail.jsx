@@ -21,7 +21,7 @@ export default function Tail() {
 
 		return () => window.removeEventListener('scroll', showArrow)
 	}, [])
-	
+
 	return (
 		<>
 			<div className='bg-black'>
@@ -95,47 +95,47 @@ export default function Tail() {
 						<div className='w-[30%]'>
 							<h2 className='mb-10 text-white uppercase sm:mb-5'>Navigate</h2>
 							<ul className='text-[#726e6e]'>
-								<a href='/locations'>
-									<li className='transition ease-in-out hover:text-white'>Locations</li>
-								</a>
-								<a href='/memberships'>
-									<li className='transition ease-in-out hover:text-white'>Memberships</li>
-								</a>
-								<a href='/facilities'>
-									<li className='transition ease-in-out hover:text-white'>Facilities</li>
-								</a>
-								<a href='/blog'>
-									<li className='transition ease-in-out hover:text-white'>Blog</li>
-								</a>
-								<a href='/book-tour'>
-									<li className='transition ease-in-out hover:text-white'>Book a tour</li>
-								</a>
-								<a href='/contact'>
-									<li className='transition ease-in-out hover:text-white'>Contact</li>
-								</a>
-								<a href='/about'>
-									<li className='transition ease-in-out hover:text-white'>About us</li>
-								</a>
+								<li className='transition ease-in-out hover:text-white'>
+									<a href='/locations'>Locations</a>
+								</li>
+								<li className='transition ease-in-out hover:text-white'>
+									<a href='/memberships'>Memberships</a>
+								</li>
+								<li className='transition ease-in-out hover:text-white'>
+									<a href='/facilities'>Facilities</a>
+								</li>
+								<li className='transition ease-in-out hover:text-white'>
+									<a href='/blog'>Blog</a>
+								</li>
+								<li className='transition ease-in-out hover:text-white'>
+									<a href='/book-tour'>Book a tour</a>
+								</li>
+								<li className='transition ease-in-out hover:text-white'>
+									<a href='/contact'>Contact</a>
+								</li>
+								<li className='transition ease-in-out hover:text-white'>
+									<a href='/about'>About us</a>
+								</li>
 							</ul>
 						</div>
 						<div className='lg:w-[35%] font-extrabold mb-20'>
 							<h2 className='mb-10 text-white uppercase sm:mb-5'>Template</h2>
 							<ul className='text-[#726e6e] font-extrabold'>
-								<a href='/facilities'>
-									<li className='transition ease-in-out hover:text-white'>Facilities</li>
-								</a>
-								<a href='/blog'>
-									<li className='transition ease-in-out hover:text-white'>Blog</li>
-								</a>
-								<a href='/book-tour'>
-									<li className='transition ease-in-out hover:text-white'>Book a tour</li>
-								</a>
-								<a href='/contact'>
-									<li className='transition ease-in-out hover:text-white'>Contact</li>
-								</a>
-								<a href='/about'>
-									<li className='transition ease-in-out hover:text-white'>About us</li>
-								</a>
+								<li className='transition ease-in-out hover:text-white'>
+									<a href='/facilities'>Facilities</a>
+								</li>
+								<li className='transition ease-in-out hover:text-white'>
+									<a href='/blog'>Blog</a>
+								</li>
+								<li className='transition ease-in-out hover:text-white'>
+									<a href='/book-tour'>Book a tour</a>
+								</li>
+								<li className='transition ease-in-out hover:text-white'>
+									<a href='/contact'>Contact</a>
+								</li>
+								<li className='transition ease-in-out hover:text-white'>
+									<a href='/about'>About us</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -146,16 +146,16 @@ export default function Tail() {
 					</p>
 
 					<div className={scrollValue ? 'w-[30px]' : 'hidden'}>
-					<a
-						href='#top'
-						className='fixed p-3 transition ease-in-out bg-white rounded-full bottom-5 right-5'
-					>
-						<FaAngleUp
-							color='#000'
-							size={20}
-						/>
-					</a>
-				</div>
+						<a
+							href='#top'
+							className='fixed p-3 transition ease-in-out bg-white rounded-full bottom-5 right-5'
+						>
+							<FaAngleUp
+								color='#000'
+								size={20}
+							/>
+						</a>
+					</div>
 				</footer>
 			</div>
 		</>
