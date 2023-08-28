@@ -57,7 +57,7 @@ export default function Body() {
 						className='w-[70%] h-[70%] md:w-[55%] md:h-[55%] sm:[w-50%] sm:[h-50%] rounded-full border-4 border-white'
 					/>
 				</div>
-				<div className='z-10 md:w-full sm:w-full lg:w-1/2'>
+				<div className='md:w-full sm:w-full lg:w-1/2'>
 					<div className='px-12 text-black bg-white md:px-20 sm:px-5 lg:pt-10 md:py-16 sm:py-10'>
 						<div>
 							<h2 className='lg:text-[21px] md:text-[16px] lg:pb-32 sm:text-[16px]  uppercase text-black font-extrabold'>
