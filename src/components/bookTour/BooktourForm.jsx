@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Hero3 from '../../assets/membership/hero3.jpg'
 import Hero4 from '../../assets/membership/hero4.jpg'
 import BlackButton from '../shared/BlackButton'
@@ -9,7 +9,6 @@ export default function BooktourForm() {
 			<div className='text-black bg-gradient-to-br from-[#92f0ce] from-10% via-white via-20% to-[#c7f092] to-130% py-24'>
 				<div className='flex flex-col text-center '>
 					<div className='lg:text-[84px] md:text-[40px] sm:text-[25px] font-extrabold text-black uppercase flex justify-center flex-col items-center pb-10'>
-						<AnimatePresence>
 							<h2>
 								<div className='flex justify-center gap-3 pb-3'>
 									<motion.div
@@ -84,7 +83,6 @@ export default function BooktourForm() {
 							>
 								Let us show you how Hotdesk can transform your work day.
 							</motion.div>
-						</AnimatePresence>
 					</div>
 
 					<form className='flex flex-col items-center justify-center m-auto sm:w-[90%]'>
