@@ -55,7 +55,7 @@ export const Testimonials = () => {
 						{testimonialSection.map((section) => (
 							<SwiperSlide key={section.id}>
 								<div className='flex md:flex-col sm:flex-col mx-10 w-80% border-4 bg-white text-black border-black sm:border-none mt-32 mb-20 sm:my-10 md:mx-[5.2rem] lg:mx-20 lg:divide-x-4 lg:divide-black sm:mx-5 sm:p-7 text-center'>
-									<div className='flex flex-col px-12 py-10'>
+									<div className='flex flex-col py-10 md:items-center sm:items-center md:text-center sm:text-center'>
 										<img
 											src={section.logo}
 											alt=''

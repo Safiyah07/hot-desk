@@ -16,7 +16,7 @@ export default function BooktourForm() {
 										viewport={{ once: false }}
 										animate={{ opacity: 1 }}
 										mode='wait'
-										transition={{ duration: 1, delay: 0.7 }}
+										transition={{ duration: 1, delay: 0.2 }}
 										className='px-4 bg-white border-4 border-black sm:border-2'
 									>
 										Come
@@ -26,7 +26,7 @@ export default function BooktourForm() {
 										viewport={{ once: false }}
 										animate={{ opacity: 1 }}
 										mode='wait'
-										transition={{ duration: 1, delay: 0.7 }}
+										transition={{ duration: 1, delay: 0.2 }}
 										className='px-4 bg-white border-4 border-black sm:border-2'
 									>
 										See
@@ -36,7 +36,7 @@ export default function BooktourForm() {
 										viewport={{ once: false }}
 										animate={{ opacity: 1 }}
 										mode='wait'
-										transition={{ duration: 1, delay: 0.7 }}
+										transition={{ duration: 1, delay: 0.2 }}
 										className='px-4 md:hidden sm:hidden'
 									>
 										<img
@@ -52,7 +52,7 @@ export default function BooktourForm() {
 										viewport={{ once: false }}
 										animate={{ opacity: 1 }}
 										mode='wait'
-										transition={{ duration: 1, delay: 0.9 }}
+										transition={{ duration: 1, delay: 0.4 }}
 										className='px-4 md:hidden sm:hidden'
 									>
 										<img
@@ -66,7 +66,7 @@ export default function BooktourForm() {
 										viewport={{ once: false }}
 										animate={{ opacity: 1 }}
 										mode='wait'
-										transition={{ duration: 1, delay: 0.9 }}
+										transition={{ duration: 1, delay: 0.4 }}
 										className='px-4 bg-white border-4 border-black sm:border-2'
 									>
 										Hotdesk.
@@ -78,7 +78,7 @@ export default function BooktourForm() {
 								viewport={{ once: false }}
 								animate={{ opacity: 1 }}
 								mode='wait'
-								transition={{ duration: 1, delay: 1 }}
+								transition={{ duration: 1, delay: 0.5 }}
 								className='py-20 text-4xl font-extrabold normal-case md:text-xl sm:text-lg sm:pb-10 sm:mx-3 w-[50%]'
 							>
 								Let us show you how Hotdesk can transform your work day.

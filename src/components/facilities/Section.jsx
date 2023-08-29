@@ -50,7 +50,7 @@ export default function Section() {
 			</div>
 
 			<div className='flex uppercase md:flex-col-reverse sm:flex-col-reverse'>
-				<div className='flex justify-center bg-gradient-to-b from-[#f5f5f5] via-white to-[#c7f092] lg:w-1/2 lg:py-48 md:py-12 sm:py-10'>
+				<div className='flex justify-center bg-gradient-to-b from-[#f5f5f5] via-white to-[#c7f092] lg:w-1/2 lg:py-48 md:py-12 sm:py-10 sm:px-5'>
 					<img
 						src={BodyImage2}
 						alt=''
