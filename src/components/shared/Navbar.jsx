@@ -46,7 +46,7 @@ export default function Navbar() {
 				className={`${
 					showMenu
 						? 'absolute opacity-0 md:-top-[350px] sm:-top-[400px]'
-						: 'top-[100px] sm:top-[83px] absolute '
+						: 'top-[100px] sm:top-[75px] absolute '
 				} py-5 p-2 bg-base-100 w-[97vw] md:w-[91vw] sm:w-[90vw] z-10 left-6 text-xl font-bold flex justify-center flex-col transition-all ease-in-out  duration-500 lg:hidden`}
 			>
 				{navbarItems.map((Item) => (
@@ -99,7 +99,7 @@ export default function Navbar() {
 					</Link>
 				</div>
 
-				<div className='dropdown md:flex md:gap-4 md:items-center sm:block lg:hidden'>
+				<div className='md:flex md:gap-4 md:items-center sm:block lg:hidden'>
 					<Link
 						to='/book-tour'
 						className='sm:hidden'
