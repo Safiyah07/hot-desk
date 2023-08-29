@@ -11,27 +11,6 @@ export default function SecondCeoSection() {
 		threshold: 0.3,
 	})
 
-	const staffs = [
-		{
-			id: 1,
-			img: Founder1,
-			name: 'Camilla Price',
-			position: 'Founder & CEO',
-		},
-		{
-			id: 2,
-			img: Founder2,
-			name: 'Andrew Phillips',
-			position: 'Founder & CEO',
-		},
-		{
-			id: 3,
-			img: GeneralManager,
-			name: 'Raymond Lovell',
-			position: 'Founder & CEO',
-		},
-	]
-
 	return (
 		<>
 			<div
@@ -41,13 +20,13 @@ export default function SecondCeoSection() {
 				<h2 className='pb-5 text-2xl uppercase md:text-xl sm:text-lg'>
 					Meet the hotdesk crew
 				</h2>
-				<div className='flex'>
-					<div className='flex items-center justify-center m-auto md:gap-16 md:flex-col sm:flex-col'>
+				<div className='flex items-center justify-center m-auto md:gap-16 md:flex-col sm:flex-col'>
+					<div className='flex items-center m-auto md:gap-16 md:flex-col sm:flex-col'>
 						<motion.div
 							initial='hidden'
 							viewport={{ once: true }}
 							animate={{ opacity: inView ? 1 : 0 }}
-							transition={{ duration: 0.7, delay: 0.2 }}
+							transition={{ duration: 0.4, delay: 0.2 }}
 							className='flex flex-col items-center justify-center gap-6 text-xl sm:py-6 md:text-lg'
 						>
 							<img
@@ -67,7 +46,7 @@ export default function SecondCeoSection() {
 					<motion.div initial='hidden'
 							viewport={{ once: true }}
 							animate={{ opacity: inView ? 1 : 0 }}
-							transition={{ duration: 0.7, delay: 0.4 }} className='flex flex-col items-center justify-center gap-6 text-xl sm:py-6 md:text-lg'>
+							transition={{ duration: 0.5, delay: 0.4 }} className='flex flex-col items-center justify-center gap-6 text-xl sm:py-6 md:text-lg'>
 						<img
 							src={Founder2}
 							alt=''
