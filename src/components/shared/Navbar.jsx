@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { IoMenuOutline, IoCloseOutline } from 'react-icons/io5'
+import { Squash as Hamburger } from 'hamburger-react'
 import darkLogo from '../../assets/dark-logo.svg'
 import Button from './BlackButton'
 
@@ -107,18 +107,19 @@ export default function Navbar() {
 						<Button>Book A Tour</Button>
 					</Link>
 					<div className='lg:hidden'>
-						<label
-							onClick={menuDisplay}
-							className='cursor-pointer'
-						>
+						<label className='cursor-pointer'>
 							{showMenu ? (
-								<IoMenuOutline
-									size='40px'
+								<Hamburger
+									toggled={!showMenu}
+									toggle={menuDisplay}
+									size='40'
 									color='black'
 								/>
 							) : (
-								<IoCloseOutline
-									size='40px'
+								<Hamburger
+									toggled={!showMenu}
+									toggle={menuDisplay}
+									size='40'
 									color='black'
 								/>
 							)}
