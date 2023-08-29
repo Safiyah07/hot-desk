@@ -6,7 +6,7 @@ import CompaniesFooter from '../components/shared/CompaniesFooter'
 
 export default function About() {
   return (
-    <div>
+    <div> 
       <Hero />
       <HotdeskNumbers />
       <FirstCeoSection />
