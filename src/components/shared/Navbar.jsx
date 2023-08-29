@@ -105,7 +105,7 @@ export default function Navbar() {
 					className={`${
 						showMenu
 							? 'absolute opacity-0 md:-top-[300px] sm:-top-[400px]'
-							: 'top-[100px] sm:top-[84px] absolute '
+							: 'top-[100px] sm:top-[83px] absolute '
 					} py-5 p-2 bg-base-100 w-[97vw] md:w-[91vw] sm:w-[90vw] z-10 left-6 text-xl font-bold flex justify-center flex-col transition-all ease-in-out delay-150 lg:hidden`}
 				>
 					{navbarItems.map((Item) => (
