@@ -112,14 +112,14 @@ export default function Navbar() {
 								<Hamburger
 									toggled={!showMenu}
 									toggle={menuDisplay}
-									size='40'
+									size='30'
 									color='black'
 								/>
 							) : (
 								<Hamburger
 									toggled={!showMenu}
 									toggle={menuDisplay}
-									size='40'
+									size='30'
 									color='black'
 								/>
 							)}
