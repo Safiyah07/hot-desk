@@ -1,9 +1,16 @@
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa6'
 import Founder1 from '../../assets/about/ceo1.jpg'
 import Founder2 from '../../assets/about/ceo2.jpg'
 import GeneralManager from '../../assets/about/generalManager.jpg'
 
 export default function SecondCeoSection() {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 0.3,
+	})
+
 	const staffs = [
 		{
 			id: 1,
@@ -27,11 +34,20 @@ export default function SecondCeoSection() {
 
 	return (
 		<>
-			<div className='bg-[#f5f5f5] font-black text-black flex flex-col gap-10 items-center py-20'>
+			<div
+				ref={ref}
+				className='bg-[#f5f5f5] font-black text-black flex flex-col gap-10 items-center py-20'
+			>
 				<h2 className='pb-5 text-2xl uppercase md:text-xl sm:text-lg'>
 					Meet the hotdesk crew
 				</h2>
-				<div className='flex items-center justify-center m-auto md:gap-16 md:flex-col sm:flex-col '>
+				<motion.div
+					initial='hidden'
+					viewport={{ once: true }}
+					animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
+					transition={{ duration: 0.2 }}
+					className='flex items-center justify-center m-auto md:gap-16 md:flex-col sm:flex-col '
+				>
 					{staffs.map((staff) => (
 						<div
 							key={staff.id}
@@ -51,7 +67,7 @@ export default function SecondCeoSection() {
 							</div>
 						</div>
 					))}
-				</div>
+				</motion.div>
 			</div>
 		</>
 	)
