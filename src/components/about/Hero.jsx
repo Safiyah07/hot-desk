@@ -67,8 +67,8 @@ export default function Hero() {
 					>
 						A space for creatives to work together and create amazing things.
 					</motion.div>
-					<ImageSectionSlide />
 				</div>
+					<ImageSectionSlide />
 			</div>
 		</>
 	)
