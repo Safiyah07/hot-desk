@@ -41,33 +41,64 @@ export default function SecondCeoSection() {
 				<h2 className='pb-5 text-2xl uppercase md:text-xl sm:text-lg'>
 					Meet the hotdesk crew
 				</h2>
-				<motion.div
-					initial='hidden'
-					viewport={{ once: true }}
-					animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
-					transition={{ duration: 0.2 }}
-					className='flex items-center justify-center m-auto md:gap-16 md:flex-col sm:flex-col '
-				>
-					{staffs.map((staff) => (
-						<div
-							key={staff.id}
+				<div className='flex'>
+					<div className='flex items-center justify-center m-auto md:gap-16 md:flex-col sm:flex-col'>
+						<motion.div
+							initial='hidden'
+							viewport={{ once: true }}
+							animate={{ opacity: inView ? 1 : 0 }}
+							transition={{ duration: 0.7, delay: 0.2 }}
 							className='flex flex-col items-center justify-center gap-6 text-xl sm:py-6 md:text-lg'
 						>
 							<img
-								src={staff.img}
+								src={Founder1}
 								alt=''
 								className='w-[80%] md:w-[55%] sm:[w-45%] sm:[h-45%] rounded-[50%] border-4 border-black'
 							/>
-							<h2 className='uppercase '>{staff.name}</h2>
-							<p>{staff.position}</p>
+							<h2 className='uppercase '>Camilla Price</h2>
+							<p>Founder & CEO</p>
 							<div className='flex items-center gap-6 '>
 								<FaTwitter size={25} />
 								<FaLinkedin size={25} />
 								<FaGithub size={25} />
 							</div>
+						</motion.div>
+					</div>
+					<motion.div initial='hidden'
+							viewport={{ once: true }}
+							animate={{ opacity: inView ? 1 : 0 }}
+							transition={{ duration: 0.7, delay: 0.4 }} className='flex flex-col items-center justify-center gap-6 text-xl sm:py-6 md:text-lg'>
+						<img
+							src={Founder2}
+							alt=''
+							className='w-[80%] md:w-[55%] sm:[w-45%] sm:[h-45%] rounded-[50%] border-4 border-black'
+						/>
+						<h2 className='uppercase '>Andrew Phillips</h2>
+						<p>Founder & CEO</p>
+						<div className='flex items-center gap-6 '>
+							<FaTwitter size={25} />
+							<FaLinkedin size={25} />
+							<FaGithub size={25} />
 						</div>
-					))}
-				</motion.div>
+					</motion.div>
+					<motion.div initial='hidden'
+							viewport={{ once: true }}
+							animate={{ opacity: inView ? 1 : 0 }}
+							transition={{ duration: 0.7, delay: 0.6 }} className='flex flex-col items-center justify-center gap-6 text-xl sm:py-6 md:text-lg'>
+						<img
+							src={GeneralManager}
+							alt=''
+							className='w-[80%] md:w-[55%] sm:[w-45%] sm:[h-45%] rounded-[50%] border-4 border-black'
+						/>
+						<h2 className='uppercase '>Raymond Lovell</h2>
+						<p>General Manager</p>
+						<div className='flex items-center gap-6 '>
+							<FaTwitter size={25} />
+							<FaLinkedin size={25} />
+							<FaGithub size={25} />
+						</div>
+					</motion.div>
+				</div>
 			</div>
 		</>
 	)

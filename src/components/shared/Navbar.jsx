@@ -45,9 +45,9 @@ export default function Navbar() {
 				onClick={menuDisplay}
 				className={`${
 					showMenu
-						? 'absolute opacity-0 md:-top-[300px] sm:-top-[400px]'
+						? 'absolute opacity-0 md:-top-[350px] sm:-top-[400px]'
 						: 'top-[100px] sm:top-[83px] absolute '
-				} py-5 p-2 bg-base-100 w-[97vw] md:w-[91vw] sm:w-[90vw] z-10 left-6 text-xl font-bold flex justify-center flex-col transition-all ease-in-out  duration-300 lg:hidden`}
+				} py-5 p-2 bg-base-100 w-[97vw] md:w-[91vw] sm:w-[90vw] z-10 left-6 text-xl font-bold flex justify-center flex-col transition-all ease-in-out  duration-500 lg:hidden`}
 			>
 				{navbarItems.map((Item) => (
 					<li
@@ -107,24 +107,23 @@ export default function Navbar() {
 						<Button>Book A Tour</Button>
 					</Link>
 					<div className='lg:hidden'>
-						<label
-							className='cursor-pointer'
-							onClick={menuDisplay}
-						>
-							<div className='p-2 rounded-xl sm:p-1'>
-								{showMenu ? (
-									<IoMenuOutline
-										size='40px'
-										color='black'
-										className='fill-current '
-									/>
-								) : (
-									<IoCloseOutline
-										size='40px'
-										className='fill-current '
-									/>
-								)}
-							</div>
+						<label className='swap swap-rotate'>
+							<input
+								type='checkbox'
+								onChange={menuDisplay}
+							/>
+
+							<IoCloseOutline
+								size='40px'
+								color='black'
+								className='swap-on'
+							/>
+
+							<IoMenuOutline
+								size='40px'
+								color='black'
+								className='swap-off'
+							/>
 						</label>
 					</div>
 				</div>

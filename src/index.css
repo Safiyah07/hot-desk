@@ -66,9 +66,3 @@ select {
 .swiper-pagination-bullet-active {
   opacity: 1;
 }
-
-.image-gallery {
-  will-change: transform;
-    transform: translate3d(-40.2752%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-}

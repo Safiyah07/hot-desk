@@ -17,22 +17,22 @@ export default function ImageSectionSlide() {
 					<img
 						src={Section2}
 						alt=''
-						className='w-[80%] h-[50%] border-4 border-black sm:border-2'
+						className='w-full h-[60%] border-4 border-black sm:border-2'
 					/>
 					<img
 						src={Section5}
 						alt=''
-						className='w-[25%] border-4 border-black rounded-[50%] sm:border-2'
+						className='w-[35%] border-4 border-black rounded-[50%] sm:border-2'
 					/>
 					<img
 						src={Section3}
 						alt=''
-						className='w-[80%] h-[50%] border-4 border-black sm:border-2'
+						className='w-full h-[60%] border-4 border-black sm:border-2'
 					/>
 					<img
 						src={Section5}
 						alt=''
-						className='w-[25%] border-4 border-black rounded-[50%] sm:border-2'
+						className='w-[35%] border-4 border-black rounded-[50%] sm:border-2'
 					/>
 				</motion.div>
 			</div>
