@@ -9,7 +9,7 @@ import BodyImage3 from '../../assets/landing/bodyImage3.jpg'
 export default function Body() {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
-		threshold: 0.5,
+		threshold: 0.3,
 	})
 
 	return (

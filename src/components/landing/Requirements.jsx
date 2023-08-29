@@ -1,25 +1,49 @@
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import Requirements1 from '../../assets/landing/Requirements1.jpg'
 import Requirements2 from '../../assets/landing/Requirements2.jpg'
 import WhiteButton from '../shared/WhiteButton'
 
 export default function Requirements() {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 0.3,
+	})
+
 	return (
 		<>
-			<div className='flex md:flex-col sm:flex-col relative gap-10 text-white pt-24 lg:pl-24  bg-gradient-to-b from-[#000] to-[#222] h-fit'>
+			<div
+				ref={ref}
+				className='flex md:flex-col sm:flex-col relative gap-10 text-white pt-24 lg:pl-24  bg-gradient-to-b from-[#000] to-[#222] h-fit'
+			>
 				<div className='md:pl-32 sm:pl-6 sm:pb-20'>
-					<img
+					<motion.img
+						initial='hidden'
+						viewport={{ once: true }}
+						animate={{ opacity: inView ? 1 : 0 }}
+						transition={{ duration: 0.5, delay: 0.2 }}
 						src={Requirements1}
 						alt=''
 						className='w-[80%] md:w-[80%] md:[h-55%] sm:w-[94%] sm:h-[80%] border-4 border-white'
 					/>
-					<img
+					<motion.img
+						initial='hidden'
+						viewport={{ once: true }}
+						animate={{ opacity: inView ? 1 : 0 }}
+						transition={{ duration: 0.5, delay: 0.7 }}
 						src={Requirements2}
 						alt=''
 						className='relative bottom-24 left-[176px] w-[278px] h-[278px] md:w-[275px] md:h-[275px] sm:w-[180px] sm:h-[180px] sm:left-[160px] sm:absolute sm:bottom-[21rem] rounded-[50%] border-4 border-white '
 					/>
 				</div>
-				<div className='flex flex-col lg:pt-20 md:text-center sm:text-center'>
+				<motion.div
+					initial='hidden'
+					viewport={{ once: true }}
+					animate={{ opacity: inView ? 1 : 0 }}
+					transition={{ duration: 0.5, delay: 0.5 }}
+					className='flex flex-col lg:pt-20 md:text-center sm:text-center'
+				>
 					<div className='text-white sm:px-5'>
 						<div>
 							<h2 className='lg:text-[21px] md:text-[20px] sm:text-[16px] uppercase font-extrabold'>
@@ -38,7 +62,7 @@ export default function Requirements() {
 							</Link>
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</>
 	)

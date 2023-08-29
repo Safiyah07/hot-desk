@@ -6,7 +6,7 @@ import WhiteButton from '../shared/WhiteButton'
 export default function DemandOptions() {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
-		threshold: 0.5,
+		threshold: 0.3,
 	})
 
 	return (

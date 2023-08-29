@@ -9,7 +9,7 @@ import Rise from '../../assets/Rise.svg'
 export default function Companies() {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
-		threshold: 0.5,
+		threshold: 0.3,
 	})
 
 	return (

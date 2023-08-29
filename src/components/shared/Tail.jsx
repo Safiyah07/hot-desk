@@ -1,10 +1,16 @@
 import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import whiteLogo from '../../assets/white-logo.svg'
 import { Link } from 'react-router-dom'
 import { FaAngleUp } from 'react-icons/fa6'
 import { useEffect, useState } from 'react'
 
 export default function Tail() {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 0.3,
+	})
+
 	const footerYear = new Date().getFullYear()
 
 	const [scrollValue, setScrollValue] = useState(false)
@@ -24,7 +30,7 @@ export default function Tail() {
 
 	return (
 		<>
-			<div className='bg-black'>
+			<div ref={ref} className='bg-black'>
 				<div className='flex pt-32 pb-24 text-5xl text-white px-7 md:px-6 md:flex-col sm:flex-col gap-44 md:gap-16 sm:gap-12 sm:px-5'>
 					<Link to='/'>
 						<img
@@ -37,7 +43,7 @@ export default function Tail() {
 							<motion.div
 								className='px-4 py-3 text-white border-4 border-white sm:border-2'
 								initial={{ opacity: 0 }}
-								animate={{ opacity: 1 }}
+								animate={{ opacity: inView ? 1 : 0 }}
 								transition={{
 									duration: 0.8,
 									delay: 0.3,
@@ -48,7 +54,7 @@ export default function Tail() {
 							</motion.div>
 							<motion.div
 								initial={{ opacity: 0 }}
-								animate={{ opacity: 1 }}
+								animate={{ opacity: inView ? 1 : 0 }}
 								transition={{ duration: 1, delay: 0.5 }}
 								className='px-4 py-3 text-white border-4 border-white sm:border-2'
 							>
@@ -59,7 +65,7 @@ export default function Tail() {
 						<div className='flex gap-4 py-4 sm:gap-2 sm:py-2'>
 							<motion.div
 								initial={{ opacity: 0 }}
-								animate={{ opacity: 1 }}
+								animate={{ opacity: inView ? 1 : 0 }}
 								transition={{ duration: 1, delay: 0.7 }}
 								className='px-4 py-3 text-white border-4 border-white sm:border-2'
 							>
@@ -67,7 +73,7 @@ export default function Tail() {
 							</motion.div>
 							<motion.div
 								initial={{ opacity: 0 }}
-								animate={{ opacity: 1 }}
+								animate={{ opacity: inView ? 1 : 0 }}
 								transition={{ duration: 1, delay: 0.9 }}
 								className='px-4 py-3 text-white border-4 border-white sm:border-2'
 							>
@@ -148,7 +154,7 @@ export default function Tail() {
 					<div className={scrollValue ? 'w-[30px]' : 'hidden'}>
 						<a
 							href='#top'
-							className='fixed p-3 transition ease-in-out bg-white rounded-full bottom-5 right-5'
+							className='fixed z-50 p-3 transition ease-in-out bg-white rounded-full bottom-5 right-5'
 						>
 							<FaAngleUp
 								color='#000'
