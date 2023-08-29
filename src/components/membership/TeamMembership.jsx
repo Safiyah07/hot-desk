@@ -1,15 +1,25 @@
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import WhiteButton from "../shared/WhiteButton"
 
 export default function TeamMembership() {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 0.3,
+	})
+	
   return (
     <>
-     <div id="team" className='flex flex-col py-32 sm:py-10 font-extrabold text-white bg-gradient-to-b from-[#000] to-[#222]'>
+     <div id="team" ref={ref} className='flex flex-col py-32 sm:py-10 font-extrabold text-white bg-gradient-to-b from-[#000] to-[#222]'>
 				<h2 className='lg:text-[50px] md:text-[2rem] sm:text-xl font-black uppercase lg:w-[70%] m-auto text-center bg-demandGraphic bg-contain bg-no-repeat bg-[bottom_left_7rem] sm:bg-[bottom_left_5rem] lg:px-20 px-32 sm:px-16 '>
 					Team Membership
 				</h2>
 
 				<div className='flex gap-10 px-32 py-20 md:flex-col sm:flex-col sm:py-12 lg:px-7 sm:px-5 '>
-					<div className='py-6 border-2 border-white lg:w-1/2'>
+					<motion.div initial='hidden'
+						viewport={{ once: true }}
+						animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -40 }}
+						transition={{ duration: 0.2 }} className='py-6 border-2 border-white lg:w-1/2'>
 						<p className='lg:text-[54px] md:text-[2.5rem] sm:text-3xl font-black uppercase border-b-2 w-full px-10 pb-5'>
 							Shared
 						</p>
@@ -44,9 +54,12 @@ export default function TeamMembership() {
 								<WhiteButton> Start now</WhiteButton>
 							</a>
 						</div>
-					</div>
+					</motion.div>
 
-					<div className='py-6 border-2 border-white lg:w-1/2'>
+					<motion.div initial='hidden'
+						viewport={{ once: true }}
+						animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 40 }}
+						transition={{ duration: 0.2 }} className='py-6 border-2 border-white lg:w-1/2'>
 						<p className='lg:text-[54px] md:text-[2.5rem] sm:text-3xl font-black uppercase border-b-2 w-full px-10 pb-5'>
 							Private
 						</p>
@@ -82,7 +95,7 @@ export default function TeamMembership() {
 								<WhiteButton>Start Now</WhiteButton>
 							</a>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 
         <div className="text-center lg:text-3xl md:text-xl sm:text-base sm:px-6">Need a custom membership for your team? Get in touch.</div>

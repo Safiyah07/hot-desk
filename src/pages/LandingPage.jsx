@@ -7,6 +7,7 @@ import Companies from '../components/landing/Companies'
 import { ImageSlider } from '../components/landing/ImageSlider'
 import GetInTouch from '../components/shared/GetInTouch'
 import Requirements from '../components/landing/Requirements'
+import Body2 from '../components/landing/Body2'
 
 export default function LandingPage() {
 	return (
@@ -15,6 +16,7 @@ export default function LandingPage() {
 				<Hero />
 				<Slider />
 				<Body />
+				<Body2 />
 				<Members />
 				<DemandOptions />
 				<Companies />
