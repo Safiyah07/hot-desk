@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import WhiteButton from '../shared/WhiteButton'
 
 export default function DemandOptions() {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 0.5,
+	})
+
 	return (
 		<>
 			<div className='flex flex-col py-10 font-extrabold text-white bg-black'>
@@ -9,8 +16,17 @@ export default function DemandOptions() {
 					ON-DEMAND OPTIONS FOR TEAMS OF ALL SIZES.
 				</h2>
 
-				<div className='flex gap-20 px-32 py-20 md:flex-col sm:flex-col sm:py-12 lg:px-20 sm:px-5 '>
-					<div className='py-6 border-2 border-white lg:w-1/2'>
+				<div
+					ref={ref}
+					className='flex gap-20 px-32 py-20 md:flex-col sm:flex-col sm:py-12 lg:px-20 sm:px-5 '
+				>
+					<motion.div
+						initial='hidden'
+						viewport={{ once: true }}
+						animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -40 }}
+						transition={{ duration: 0.2 }}
+						className='py-6 border-2 border-white lg:w-1/2'
+					>
 						<p className='lg:text-[54px] md:text-[2.5rem] sm:text-3xl font-black uppercase border-b-2 w-full px-10 pb-5'>
 							Solo
 						</p>
@@ -35,9 +51,15 @@ export default function DemandOptions() {
 								<WhiteButton> See Solo Plans</WhiteButton>
 							</Link>
 						</div>
-					</div>
+					</motion.div>
 
-					<div className='py-6 border-2 border-white lg:w-1/2'>
+					<motion.div
+						initial='hidden'
+						viewport={{ once: true }}
+						animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 40 }}
+						transition={{ duration: 0.2 }}
+						className='py-6 border-2 border-white lg:w-1/2'
+					>
 						<p className='lg:text-[54px] md:text-[2.5rem] sm:text-3xl font-black uppercase border-b-2 w-full px-10 pb-5'>
 							Team
 						</p>
@@ -61,7 +83,7 @@ export default function DemandOptions() {
 								<WhiteButton> See Team Plans</WhiteButton>
 							</Link>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</>

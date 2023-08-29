@@ -140,6 +140,7 @@ export default function Hero() {
 							</motion.div>
 							<motion.div
 								initial={{ opacity: 0 }}
+								whileInView='visible'
 								viewport={{ once: false }}
 								animate={{ opacity: 1 }}
 								mode='wait'

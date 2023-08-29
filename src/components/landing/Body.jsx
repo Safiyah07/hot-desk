@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import Button from '../shared/BlackButton'
 import BodyImage1 from '../../assets/landing/bodyImage1.jpg'
 import BodyImage2 from '../../assets/landing/bodyImage2.jpg'
 import BodyImage3 from '../../assets/landing/bodyImage3.jpg'
 
 export default function Body() {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 0.5,
+	})
+
 	return (
 		<>
 			<div className='flex uppercase md:flex-col sm:flex-col'>
@@ -35,12 +42,22 @@ export default function Body() {
 						</div>
 					</div>
 				</div>
-				<div className='lg:w-1/2 flex justify-center lg:py-48 md:py-10 sm:py-10 bg-gradient-to-bl from-[#9492f0] via-white to-[#92f0ce] '>
-					<img
-						src={BodyImage1}
-						alt=''
-						className=' md:w-[50%] md:[h-50%] sm:[w-45%] sm:[h-45%] rounded-full border-4 border-black'
-					/>
+				<div
+					ref={ref}
+					className='bg-gradient-to-bl from-[#9492f0] via-white to-[#92f0ce] flex justify-center lg:w-1/2 lg:py-48 md:py-10 sm:py-10 sm:px-10'
+				>
+					<motion.div
+						initial='hidden'
+						viewport={{ once: true }}
+						animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 40 }}
+						transition={{ duration: 0.2 }}
+					>
+						<img
+							src={BodyImage1}
+							alt=''
+							className='m-auto sm:[w-45%] rounded-full border-4 border-black'
+						/>
+					</motion.div>
 				</div>
 			</div>
 

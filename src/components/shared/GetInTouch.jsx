@@ -1,6 +1,13 @@
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import BlackButton from './BlackButton'
 
 export default function GetInTouch() {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 0.5,
+	})
+
 	return (
 		<>
 			<div className='text-black bg-gradient-to-br from-[#c7f092] via-white to-[#9492f0] py-24'>
@@ -67,7 +74,16 @@ export default function GetInTouch() {
 									<BlackButton>submit form</BlackButton>
 								</div>
 
-								<p className='text-lg font-extrabold'>See you soon! ✌</p>
+								<motion.p
+									ref={ref}
+									initial='hidden'
+									viewport={{ once: true }}
+									animate={{ opacity: inView ? 1 : 0 }}
+									transition={{ duration: 0.3, delay: 0.1 }}
+									className='text-lg font-extrabold'
+								>
+									See you soon! ✌
+								</motion.p>
 							</div>
 						</div>
 					</form>

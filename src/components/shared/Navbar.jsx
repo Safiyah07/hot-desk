@@ -41,11 +41,39 @@ export default function Navbar() {
 
 	return (
 		<>
+			<ul
+				onClick={menuDisplay}
+				className={`${
+					showMenu
+						? 'absolute opacity-0 md:-top-[300px] sm:-top-[400px]'
+						: 'top-[100px] sm:top-[83px] absolute '
+				} py-5 p-2 bg-base-100 w-[97vw] md:w-[91vw] sm:w-[90vw] z-10 left-6 text-xl font-bold flex justify-center flex-col transition-all ease-in-out  duration-300 lg:hidden`}
+			>
+				{navbarItems.map((Item) => (
+					<li
+						key={Item.id}
+						className='capitalize'
+					>
+						<Link
+							to={Item.link}
+							className='flex items-center px-2 pt-4 pb-[10px] hover:text-[#d1d1d1] transition ease-in-out'
+						>
+							{Item.title}
+						</Link>
+					</li>
+				))}
+
+				<div className='p-4 mt-4 text-sm font-bold text-center text-white uppercase transition ease-in-out bg-black border-2 border-black cursor-pointer hover:bg-transparent hover:text-black md:hidden'>
+					<Link to='/book-tour'>
+						<h2>Book A Tour</h2>
+					</Link>
+				</div>
+			</ul>
 			<div
-				className='flex items-center justify-between px-6 py-4 bg-base-100'
+				className='relative z-20 flex items-center justify-between px-6 py-4 bg-base-100'
 				id='top'
 			>
-				<div className='z-20 flex flex-row'>
+				<div className='flex flex-row'>
 					<Link to='/'>
 						<img
 							src={darkLogo}
@@ -100,34 +128,6 @@ export default function Navbar() {
 						</label>
 					</div>
 				</div>
-				<ul
-					onClick={menuDisplay}
-					className={`${
-						showMenu
-							? 'absolute opacity-0 md:-top-[300px] sm:-top-[400px]'
-							: 'top-[100px] sm:top-[83px] absolute '
-					} py-5 p-2 bg-base-100 w-[97vw] md:w-[91vw] sm:w-[90vw] z-10 left-6 text-xl font-bold flex justify-center flex-col transition-all ease-in-out delay-150 lg:hidden`}
-				>
-					{navbarItems.map((Item) => (
-						<li
-							key={Item.id}
-							className='capitalize'
-						>
-							<Link
-								to={Item.link}
-								className='flex items-center px-2 pt-4 pb-[10px] hover:text-[#d1d1d1] transition ease-in-out'
-							>
-								{Item.title}
-							</Link>
-						</li>
-					))}
-
-					<div className='p-4 mt-4 text-sm font-bold text-center text-white uppercase transition ease-in-out bg-black border-2 border-black cursor-pointer hover:bg-transparent hover:text-black md:hidden'>
-						<Link to='/book-tour'>
-							<h2>Book A Tour</h2>
-						</Link>
-					</div>
-				</ul>
 			</div>
 		</>
 	)

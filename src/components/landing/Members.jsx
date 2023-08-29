@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import Access from '../../assets/landing/Access.svg'
 import Concierge from '../../assets/landing/Concierge.svg'
 import Snack from '../../assets/landing/Snack.svg'
@@ -14,14 +16,28 @@ import Members6 from '../../assets/landing/Members6.jpg'
 import Button from '../shared/BlackButton'
 
 export default function Members() {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 0.5,
+	})
+
 	return (
 		<>
 			<div className='flex flex-col text-black text-center py-24 bg-gradient-to-br from-[#92f0ce] via-white to-[#9492f0]'>
 				<h2 className='lg:text-[54px] md:text-[2.3rem] sm:text-3xl font-black uppercase'>
 					For all HotDesk Members
 				</h2>
-				<div className='flex flex-col items-center justify-center py-16 md:px-10'>
-					<div className='flex gap-10 py-2 md:items-center sm:flex-col sm:gap-1'>
+				<div
+					ref={ref}
+					className='flex flex-col items-center justify-center py-16 md:px-10'
+				>
+					<motion.div
+						initial='hidden'
+						viewport={{ once: true }}
+						animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 40 }}
+						transition={{ duration: 0.2 }}
+						className='flex gap-10 py-2 md:items-center sm:flex-col sm:gap-1'
+					>
 						<span className=' w-42 h-20 md:h-16 sm:h-14 m-auto bg-white border-[3px] md:border-2 border-black rounded-full px-10 flex items-center gap-2 font-extrabold text-3xl md:text-xl sm:text-lg'>
 							<img
 								src={Access}
@@ -52,9 +68,12 @@ export default function Members() {
 								className='w-20 h-20 border-[3px] border-black rounded-[50%] sm:hidden'
 							/>
 						</span>
-					</div>
+					</motion.div>
 
-					<div className='flex gap-10 md:items-center sm:flex-col sm:gap-1 lg:py-2'>
+					<motion.div initial='hidden'
+						viewport={{ once: true }}
+						animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -40 }}
+						transition={{ duration: 0.2 }} className='flex gap-10 md:items-center sm:flex-col sm:gap-1 lg:py-2'>
 						<span className=''>
 							<img
 								src={Members3}
@@ -86,9 +105,12 @@ export default function Members() {
 							/>
 							Gigabit Internet
 						</span>
-					</div>
+					</motion.div>
 
-					<div className='flex gap-10 py-2 md:items-center sm:flex-col sm:gap-1'>
+					<motion.div initial='hidden'
+						viewport={{ once: true }}
+						animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 40 }}
+						transition={{ duration: 0.2 }} className='flex gap-10 py-2 md:items-center sm:flex-col sm:gap-1'>
 						<span className=' w-42 h-20 md:h-16 sm:h-16 sm:m-auto bg-white border-[3px] md:border-2 border-black rounded-full px-10 flex items-center gap-2 font-extrabold text-3xl md:text-2xl sm:text-lg'>
 							<img
 								src={Studios}
@@ -120,7 +142,7 @@ export default function Members() {
 								className='w-44 h-20 border-[3px] md:border-2 border-black rounded-full md:hidden sm:hidden'
 							/>
 						</span>
-					</div>
+					</motion.div>
 
 					<div className='flex flex-col items-center gap-10 text-4xl font-extrabold lg:w-1/2 md:text-2xl sm:text-lg'>
 						<p className='pt-10'>
