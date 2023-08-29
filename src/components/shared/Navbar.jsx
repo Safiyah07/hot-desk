@@ -107,23 +107,21 @@ export default function Navbar() {
 						<Button>Book A Tour</Button>
 					</Link>
 					<div className='lg:hidden'>
-						<label className='swap swap-rotate'>
-							<input
-								type='checkbox'
-								onChange={menuDisplay}
-							/>
-
-							<IoCloseOutline
-								size='40px'
-								color='black'
-								className='swap-on'
-							/>
-
-							<IoMenuOutline
-								size='40px'
-								color='black'
-								className='swap-off'
-							/>
+						<label
+							onClick={menuDisplay}
+							className='cursor-pointer'
+						>
+							{showMenu ? (
+								<IoMenuOutline
+									size='40px'
+									color='black'
+								/>
+							) : (
+								<IoCloseOutline
+									size='40px'
+									color='black'
+								/>
+							)}
 						</label>
 					</div>
 				</div>

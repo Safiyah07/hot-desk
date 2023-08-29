@@ -12,7 +12,7 @@ export default function Section() {
 						<img
 							src={Hero1}
 							alt=''
-							className='w-6 h-4 border-4 border-black rounded-full'
+							className='w-16 h-16 border-4 border-black rounded-full'
 						/>
 						<h2 className='lg:text-[44px] md:text-[32px] sm:text-[26px]'>
 							WELCOME TO HOTDESK WINDSOR
@@ -30,7 +30,7 @@ export default function Section() {
 						<img
 							src={Hero2}
 							alt=''
-							className='w-6 h-4 border-4 border-black rounded-full'
+							className='w-16 h-16 border-4 border-black rounded-full'
 						/>
 						<h2 className='lg:text-[44px] md:text-[32px] sm:text-[26px]'>
 							WHEN YOU NEED, WHERE YOU WANT.
@@ -48,7 +48,7 @@ export default function Section() {
 						<img
 							src={Hero3}
 							alt=''
-							className='w-6 h-4 border-4 border-black rounded-full'
+							className='w-16 h-16 border-4 border-black rounded-full'
 						/>
 						<h2 className='lg:text-[44px] md:text-[32px] sm:text-[26px]'>
 							WOMEN IN TECH LAUNCH EVENT.
@@ -66,7 +66,7 @@ export default function Section() {
 						<img
 							src={Hero4}
 							alt=''
-							className='w-6 h-4 border-4 border-black rounded-full'
+							className='w-16 h-16 border-4 border-black rounded-full'
 						/>
 						<h2 className='lg:text-[44px] md:text-[32px] sm:text-[26px]'>
 							NEW STUDIO SPACE IN HAWTHORN
