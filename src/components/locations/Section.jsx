@@ -6,14 +6,15 @@ import Section5 from '../../assets/location/section5.jpg'
 import Section6 from '../../assets/location/section6.jpg'
 import Section7 from '../../assets/location/section7.jpg'
 import Section8 from '../../assets/location/section8.jpg'
-import BlackButton from '../shared/BlackButton'
 import LocationIcon from '../../assets/location/LocationIcon.svg'
 import ClockIcon from '../../assets/location/ClockIcon.svg'
 import SnackIcon from '../../assets/location/SnackIcon.svg'
 import InternetIcon from '../../assets/location/InternetIcon.svg'
 import MailIcon from '../../assets/location/MailIcon.svg'
+import BlackButton from '../shared/BlackButton'
 
 export default function Section() {
+	
 	return (
 		<>
 			{/* **************HAWTHORN***************** */}
