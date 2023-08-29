@@ -21,7 +21,7 @@ export default function Hero() {
 								mode='wait'
 								transition={{
 									duration: 0.8,
-									delay: 0.3,
+									delay: 0.1,
 									ease: [0, 0.71, 0.2, 1.01],
 								}}
 							>
@@ -32,7 +32,7 @@ export default function Hero() {
 								viewport={{ once: false }}
 								animate={{ opacity: 1 }}
 								mode='wait'
-								transition={{ duration: 1, delay: 0.5 }}
+								transition={{ duration: 1, delay: 0.1 }}
 								className='px-4 md:hidden sm:hidden'
 							>
 								<img
@@ -51,7 +51,7 @@ export default function Hero() {
 								mode='wait'
 								transition={{
 									duration: 0.8,
-									delay: 0.3,
+									delay: 0.2,
 									ease: [0, 0.71, 0.2, 1.01],
 								}}
 							>
@@ -69,7 +69,7 @@ export default function Hero() {
 								mode='wait'
 								transition={{
 									duration: 0.8,
-									delay: 0.3,
+									delay: 0.2,
 									ease: [0, 0.71, 0.2, 1.01],
 								}}
 							>
@@ -80,7 +80,7 @@ export default function Hero() {
 								viewport={{ once: false }}
 								animate={{ opacity: 1 }}
 								mode='wait'
-								transition={{ duration: 1, delay: 0.5 }}
+								transition={{ duration: 1, delay: 0.2 }}
 								className='px-4 bg-white border-4 border-black sm:border-2'
 							>
 								For
@@ -93,7 +93,7 @@ export default function Hero() {
 								viewport={{ once: false }}
 								animate={{ opacity: 1 }}
 								mode='wait'
-								transition={{ duration: 1, delay: 0.7 }}
+								transition={{ duration: 1, delay: 0.3 }}
 								className='px-4 bg-white border-4 border-black sm:border-2'
 							>
 								Teams
@@ -103,7 +103,7 @@ export default function Hero() {
 								viewport={{ once: false }}
 								animate={{ opacity: 1 }}
 								mode='wait'
-								transition={{ duration: 1, delay: 0.9 }}
+								transition={{ duration: 1, delay: 0.3 }}
 								className='px-4 bg-white border-4 border-black sm:border-2'
 							>
 								of
@@ -113,7 +113,7 @@ export default function Hero() {
 								viewport={{ once: false }}
 								animate={{ opacity: 1 }}
 								mode='wait'
-								transition={{ duration: 1, delay: 0.9 }}
+								transition={{ duration: 1, delay: 0.3 }}
 								className='px-4 md:hidden sm:hidden'
 							>
 								<img
@@ -129,7 +129,7 @@ export default function Hero() {
 								viewport={{ once: false }}
 								animate={{ opacity: 1 }}
 								mode='wait'
-								transition={{ duration: 1, delay: 0.9 }}
+								transition={{ duration: 1, delay: 0.6 }}
 								className='px-4 md:hidden sm:hidden'
 							>
 								<img
@@ -143,7 +143,7 @@ export default function Hero() {
 								viewport={{ once: false }}
 								animate={{ opacity: 1 }}
 								mode='wait'
-								transition={{ duration: 1, delay: 0.7 }}
+								transition={{ duration: 1, delay: 0.6 }}
 								className='px-4 bg-white border-4 border-black sm:border-2'
 							>
 								All Sizes.

@@ -34,13 +34,6 @@ select {
   cursor: pointer;
 }
 
-/* Marquee.css */
-.marquee-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
 .marquee-content {
   display: inline-block;
   white-space: nowrap;
@@ -61,5 +54,15 @@ select {
   }
 }
 
+.swiper-pagination-bullet {
+  width: 15px !important; /* Adjust the width as needed */
+  height: 15px !important; /* Adjust the height as needed */
+  background-color: #222 !important; /* Change to the desired color */
+  opacity: 0.5; /* Optional: Adjust the opacity of the inactive bullets */
+  transition: opacity 0.2s ease; /* Optional: Add a transition effect */
+}
 
-
+/* Style the active pagination bullet */
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
