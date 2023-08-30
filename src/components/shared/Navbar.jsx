@@ -14,23 +14,23 @@ export default function Navbar() {
 	const navbarItems = [
 		{
 			id: 1,
+			title: 'About',
+			link: '/about',
+		},
+		{
+			id: 2,
 			title: 'Membership',
 			link: '/memberships',
 		},
 		{
-			id: 2,
+			id: 3,
 			title: 'Locations',
 			link: '/locations',
 		},
 		{
-			id: 3,
+			id: 4,
 			title: 'Facilities',
 			link: '/facilities',
-		},
-		{
-			id: 4,
-			title: 'Blog',
-			link: '/blog',
 		},
 		{
 			id: 5,

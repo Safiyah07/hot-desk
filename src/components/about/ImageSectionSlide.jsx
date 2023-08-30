@@ -5,7 +5,7 @@ import Section5 from '../../assets/location/section5.jpg'
 
 export default function ImageSectionSlide() {
 	const { scrollYProgress } = useScroll()
-	const x = useTransform(scrollYProgress, [0, 1], [0, -1000])
+	const x = useTransform(scrollYProgress, [0, 1], [-150, -1000])
 
 	return (
 		<>
@@ -17,22 +17,22 @@ export default function ImageSectionSlide() {
 					<img
 						src={Section2}
 						alt=''
-						className='w-full h-[60%] sm:h-[75%] border-4 border-black sm:border-2'
+						className='w-full h-[60%] sm:h-[70%] border-4 border-black sm:border-2'
 					/>
 					<img
 						src={Section5}
 						alt=''
-						className='w-[35%] sm:w-[50%] border-4 border-black rounded-[50%] sm:border-2'
+						className='w-[35%] sm:w-[45%] border-4 border-black rounded-[50%] sm:border-2'
 					/>
 					<img
 						src={Section3}
 						alt=''
-						className='w-full h-[60%] sm:h-[75%] border-4 border-black sm:border-2'
+						className='w-full h-[60%] sm:h-[70%] border-4 border-black sm:border-2'
 					/>
 					<img
 						src={Section5}
 						alt=''
-						className='w-[35%] sm:w-[50%] border-4 border-black rounded-[50%] sm:border-2'
+						className='w-[35%] sm:w-[45%] border-4 border-black rounded-[50%] sm:border-2'
 					/>
 				</motion.div>
 			</div>
